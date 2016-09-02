@@ -2,7 +2,7 @@
 layout: null
 ---
 $(document).ready(function () {
-  $('a.blog-button').click(function (e) {
+  $('a.slide-button').click(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return
     currentWidth = $('.panel-cover').width()
     if (currentWidth < 960) {
@@ -14,10 +14,6 @@ $(document).ready(function () {
     }
   })
 
-  if (window.location.hash && window.location.hash == '#blog') {
-    $('.panel-cover').addClass('panel-cover--collapsed')
-  }
-
   if (window.location.pathname !== '{{ site.baseurl }}' && window.location.pathname !== '{{ site.baseurl }}index.html') {
     $('.panel-cover').addClass('panel-cover--collapsed')
   }
@@ -27,17 +23,17 @@ $(document).ready(function () {
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
-  $('.navigation-wrapper .about-button').click(function () {
+  $('.navigation-wrapper .slide-button').click(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
-  $('.navigation-wrapper .tutorial-button').click(function () {
+  $('.navigation-wrapper .slide-button').click(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })
 
-  $('.navigation-wrapper .apps-button').click(function () {
+  $('.navigation-wrapper .slide-button').click(function () {
     $('.navigation-wrapper').toggleClass('visible')
     $('.btn-mobile-menu__icon').toggleClass('icon-list icon-x-circle animated fadeIn')
   })

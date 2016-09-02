@@ -1,8 +1,8 @@
 # Site settings
 title: BIDS Apps
 description: 'containerized neuroimaging pipelines that understand BIDS datasets'
-url: 'http://bids-apps.neuroimaging.io'
-baseurl: ''
+url: 'http://bids-apps.neuroimaging.io/'
+baseurl: '/'
 # google_analytics: 'UA-XXXXXX-X'
 # disqus_shortname: 'your-disqus-name'
 

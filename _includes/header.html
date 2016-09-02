@@ -8,10 +8,8 @@
 
     <div class="panel-main__inner panel-inverted">
     <div class="panel-main__content">
-        <a href="{{ site.baseurl }} " title="link to home of {{ site.title }}">
           <img src="{{ "images/gear.jpg" | prepend: site.baseurl }}" class="user-image" alt="My Profile Photo">
           <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
-        </a>
         <hr class="panel-cover__divider">
         <p class="panel-cover__description">{{ site.description }}</p>
         <hr class="panel-cover__divider panel-cover__divider--secondary">
@@ -20,9 +18,9 @@
 
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
-              <li class="navigation__item"><a href="{{ site.baseurl }}/about" title="link to {{ site.title }} about" class="about-button">About</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/tutorial" title="link to {{ site.title }} tutorial" class="tutorial-button">Tutorial</a></li>
-              <li class="navigation__item"><a href="{{ site.baseurl }}/apps" title="link to {{ site.title }} apps" class="apps-button">Apps</a></li>
+              <li class="navigation__item"><a href="/about" title="link to {{ site.title }} about" class="slide-button">About</a></li>
+              <li class="navigation__item"><a href="/tutorial" title="link to {{ site.title }} tutorial" class="slide-button">Tutorial</a></li>
+              <li class="navigation__item"><a href="/apps" title="link to {{ site.title }} apps" class="slide-button">Apps</a></li>
             </ul>
           </nav>
 
