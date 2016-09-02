@@ -31,6 +31,11 @@ layout: default
           <img src="https://img.shields.io/docker/pulls/bids/{{ app | downcase }}.svg?maxAge=2592000" />
         </a>
       </td>
+      <td>
+        <a href="https://hub.docker.com/r/bids/{{ app | downcase }}/">
+          <img src="https://img.shields.io/docker/automated/bids/{{ app | downcase }}.svg?maxAge=2592000" />
+        </a>
+      </td>
     </tr>
   {% endfor %}
   </table>
