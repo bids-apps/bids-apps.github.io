@@ -21,11 +21,11 @@ layout: default
   {% highlight bash %}
   docker run --privileged -ti --rm  \
       -v /var/run/docker.sock:/var/run/docker.sock \
-      -v D:\singularity_images:/output \
+      -v /home/srycajal/ingularity_images:/output \
       filo/docker2singularity \
       bids/example:0.0.4
   {% endhighlight %}
-  <p>Where D:\singularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
+  <p>Where /home/srycajal/ingularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
   {% highlight bash %}
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
