@@ -1,0 +1,39 @@
+# Site settings
+title: BIDS Apps
+description: 'containerized neuroimaging pipelines that understand BIDS datasets'
+url: 'http://bids-apps.neuroimaging.io'
+baseurl: ''
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Chris Gorgolewski'
+  #github_username:  BIDS-Apps
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
+apps: ['example', 'freesurfer', 'ndmg', 'BROCCOLI', 'FixelAnalysis', 'SPM',
+'MRIQC', 'QAP', 'C-PAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
+'rs_signal_extract', 'aa', 'niak', 'oppni', 'fmriprep', 'brainiak-srm',
+'nipypelines', 'BRAINSAutoworkup']
