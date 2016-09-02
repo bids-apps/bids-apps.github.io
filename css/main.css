@@ -13,6 +13,10 @@ pre.highlight code,
   white-space: pre-wrap;
 }
 
+.highlight {
+  color: #FFF;
+}
+
 .btn,
 .navigation__item a {
   margin: 5px 0;

@@ -14,18 +14,18 @@ layout: default
       -v /Users/srycajal/outputs:/outputs \
       bids/example:0.0.4 \
       /bids_dataset /outputs participant --participant_label 01
-  {% endhighlight ruby %}
+  {% endhighlight %}
   <p>Where /Users/srycajal/data/ds005 is the path to the input dataset and /Users/srycajal/outputs the path where results should be stored. If the BIDS App was not run before on this machine, the docker image will be automatically downloaded from the Docker Hub.</p>
   <h2>Running a BIDS App on a cluster (HPC)</h2>
   <p>Before a BIDS App can be run on a cluster, it first needs to be saved to an Singularity-compatible image file. This step needs to be performed outside of the cluster (for example on a laptop) and requires Docker:</p>
   {% highlight bash %}
   docker run --privileged -ti --rm  \
       -v /var/run/docker.sock:/var/run/docker.sock \
-      -v D:\\singularity_images:/output \
+      -v D:\singularity_images:/output \
       filo/docker2singularity \
       bids/example:0.0.4
   {% endhighlight %}
-  <p>Where D:\\singularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
+  <p>Where D:\singularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
   {% highlight bash %}
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
