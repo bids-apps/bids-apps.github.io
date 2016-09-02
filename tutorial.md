@@ -29,7 +29,7 @@ layout: default
   {% highlight bash %}
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
-  </section>
+  
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
