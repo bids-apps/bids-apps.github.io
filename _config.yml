@@ -36,4 +36,4 @@ exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 apps: ['example', 'freesurfer', 'ndmg', 'BROCCOLI', 'FixelAnalysis', 'SPM',
 'MRIQC', 'QAP', 'C-PAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
 'rs_signal_extract', 'aa', 'niak', 'oppni', 'fmriprep', 'brainiak-srm',
-'nipypelines', 'BRAINSAutoworkup', 'HCPPipelines']
+'nipypelines', 'BRAINSAutoworkup', 'HCPPipelines', 'MAGeTbrain']
