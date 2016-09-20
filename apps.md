@@ -35,5 +35,5 @@ layout: default
   {% endfor %}
   </table>
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-</article>
-{% if page.comments != false %}{% include disqus.html %}{% endif %}
+  {% if page.comments != false %}{% include disqus.html %}{% endif %}
+  </article>

@@ -18,6 +18,6 @@ BIDS Apps are deposited in the Docker Hub repository, making them openly accessi
 Docker is used for its excellent documentation, maturity, and the Docker Hub service for storage and distribution of the images. Docker containers are easily run on personal computers and cloud services. However, the Docker Engine is rarely available in HPCs. Singularity is a unique container technology designed from the ground up, with the encapsulation of binary dependencies and HPC use in mind. It main advantage over Docker is that it does not require root access for container execution and thus is safe to use on multi-tenant systems.  In addition, it does not require recent Linux kernel functionalities (such as namespaces, cgroups and capabilities), making it easy to install on legacy systems.
 </p>
 
-  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-</article>
+{% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
+</article>
