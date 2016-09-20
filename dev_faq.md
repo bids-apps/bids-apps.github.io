@@ -3,10 +3,10 @@ layout: default
 ---
 <article class="post-container post-container--single">
   <header class="post-header">
-    <h1 class="post-title">Tutorials</h1>
+    <h1 class="post-title">Developer FAQ</h1>
   </header>
 
-    <h2>BIDS Apps versioning FAQ</h2>
+    <h2>Versioning</h2>
     <ol>
     <li>When is a new image deposited to Docker Hub?<br>
 Even though Docker image is being build on the CI server each time you push a commit to the repository it is not automatically being pushed to Docker Hub. Only if you tag a commit, push the tag to GitHub, and the tests you configured pass a new image will be deposited in Docker Hub. How to tag a new release?
@@ -32,6 +32,7 @@ All versions of BIDS Apps are archived on Docker Hub. To access a particular ver
 docker pull bids/example:v0.0.5
 {% endhighlight %}
 </li>
+</ol>
 
 {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 </article>
