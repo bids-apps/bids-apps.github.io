@@ -15,7 +15,7 @@ git tag v0.0.1
 git push --tags
 {% endhighlight %}</li>
 <li>How should I version my BIDS App?<br>
-Since most BIDS Apps are just thin wrappers around existing pipelines it would be most sensible to use the same version as the software they are wrapping. For example in case of HCP Pipelines this would be v3.17.0
+Since most BIDS Apps are just thin wrappers around existing pipelines it would be most sensible to use the same version as the software they are wrapping. For example in case of HCP Pipelines this would be v3.17.0</li>
 
 <li>What if I would like to release a new version of a BIDS App, but the pipeline version is the same - I only changed the runscript or the Dockerfile?<br>
 According to semantic versioning we should use the "+" signed followed by the build number. Unfortunately Docker Hub does not support semantic versioning. The best option is to use the "-" sign followed by the build number. For example v3.17.0-3</li>
