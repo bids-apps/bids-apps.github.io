@@ -33,7 +33,8 @@ docker pull bids/example:v0.0.5
 {% endhighlight %}
 </li>
 </ol>
-</article>
+
 {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
+</article>
