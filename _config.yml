@@ -34,6 +34,6 @@ kramdown:
 gems: ['jekyll-paginate']
 exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 apps: ['example', 'freesurfer', 'ndmg', 'BROCCOLI', 'FibreDensityAndCrosssection', 'SPM',
-'MRIQC', 'QAP', 'CPAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
+'mriqc', 'QAP', 'CPAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
 'rs_signal_extract', 'aa', 'niak', 'oppni', 'fmriprep', 'brainiak-srm',
-'nipypelines', 'HCPPipelines', 'MAGeTbrain', 'tracula']
+'nipypelines', 'HCPPipelines', 'MAGeTbrain', 'tracula', 'baracus']
