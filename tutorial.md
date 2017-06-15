@@ -22,7 +22,7 @@ layout: default
   docker run --privileged -ti --rm  \
       -v /var/run/docker.sock:/var/run/docker.sock \
       -v /home/srycajal/singularity_images:/output \
-      filo/docker2singularity \
+      singularityware/docker2singularity \
       bids/example:0.0.4
   {% endhighlight %}
   <p>Where /home/srycajal/singularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
