@@ -33,7 +33,7 @@ layout: default
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
   <p>To learn more, read the
-  <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209">PLOS paper</a> consult this
+  
   <a href="https://neurohackweek.github.io/docker-for-scientists/">tutorial</a> and watch the
   <a href="https://www.slideshare.net/chrisfilo1/docker-for-scientists">workshop video</a>. Additional links and tips can be found here:
   <a href="https://sites.google.com/a/email.arizona.edu/bmw/resources/bids">BIDS Links and Tips</a>.</p>
