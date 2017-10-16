@@ -7,7 +7,8 @@ layout: default
   </header>
 
   <h2>Running a BIDS App locally</h2>
-  <p>Running a BIDS App on a local system can be performed using Docker, which is easy to install on all three major operating systems. After installing and starting docker, download the relevant data, <a href="https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8">ds005.tar</a>, and untar it in a directory. <i>ds005</i>  will be our input directory in the following example. Create an <i>outputs</i> directory as well. To run the first stage of the example BIDS App for participant number 01, open a console (terminal or cmd) and type:</p>
+  <p>Running a BIDS App on a local system can be performed using Docker, which is easy to install on all three major operating systems. After installing and starting docker, download the relevant data,
+  <a href="https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8">ds005.tar</a>, and untar it in a directory. <i>ds005</i>  will be our input directory in the following example. Create an <i>outputs</i> directory as well. To run the first stage of the example BIDS App for participant number 01, open a console (terminal or cmd) and type:</p>
   {% highlight bash %}
   docker run -ti --rm \
       -v /Users/srycajal/data/ds005:/bids_dataset:ro \
@@ -31,7 +32,11 @@ layout: default
   {% highlight bash %}
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
-  <p>To learn more, read the <a href=http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209 >PLOS paper</a> consult this <a href=https://neurohackweek.github.io/docker-for-scientists/>tutorial</a> and watch the <a href=https://www.slideshare.net/chrisfilo1/docker-for-scientists>workshop video</a>. Additional links and tips can be found here: <a href=https://sites.google.com/a/email.arizona.edu/bmw/resources/bids>BIDS Links and Tips</a>.</p>
+  <p>To learn more, read the
+  <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209">PLOS paper</a> consult this
+  <a href="https://neurohackweek.github.io/docker-for-scientists/">tutorial</a> and watch the
+  <a href="https://www.slideshare.net/chrisfilo1/docker-for-scientists">workshop video</a>. Additional links and tips can be found here:
+  <a href="https://sites.google.com/a/email.arizona.edu/bmw/resources/bids">BIDS Links and Tips</a>.</p>
   <p><a href="/dev_faq">Developer FAQ</a></p>
 
   {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
