@@ -14,7 +14,7 @@ exclude:
 title: BIDS Apps
 description: 'portable neuroimaging pipelines that understand BIDS datasets'
 url: 'http://bids-apps.neuroimaging.io/'
-baseurl: '/'
+baseurl: ''
 # google_analytics: 'UA-XXXXXX-X'
 disqus_shortname: 'bids-apps'
 
