@@ -1,4 +1,4 @@
-exclude: [vendor]
+exclude: ['vendor']
 
 # Site settings
 title: BIDS Apps
