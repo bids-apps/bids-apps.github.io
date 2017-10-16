@@ -47,4 +47,4 @@ gems: ['jekyll-paginate']
 apps: ['example', 'freesurfer', 'ndmg', 'BROCCOLI', 'FibreDensityAndCrosssection', 'SPM',
 'mriqc', 'QAP', 'CPAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
 'rs_signal_extract', 'aa', 'niak', 'oppni', 'fmriprep', 'brainiak-srm',
-'nipypelines', 'HCPPipelines', 'MAGeTbrain', 'tracula', 'baracus']
+'nipypelines', 'HCPPipelines', 'MAGeTbrain', 'tracula', 'baracus', 'antsCorticalThickness']
