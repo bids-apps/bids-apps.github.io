@@ -1,3 +1,5 @@
+exclude: [vendor]
+
 # Site settings
 title: BIDS Apps
 description: 'portable neuroimaging pipelines that understand BIDS datasets'
