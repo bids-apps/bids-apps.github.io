@@ -1,4 +1,12 @@
-exclude: ['vendor']
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - any_additional_item
 
 # Site settings
 title: BIDS Apps
