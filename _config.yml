@@ -7,6 +7,8 @@ exclude:
   - vendor/gems/
   - vendor/ruby/
   - any_additional_item
+  - README.md
+  - creenshot.png
 
 # Site settings
 title: BIDS Apps
@@ -42,7 +44,6 @@ kramdown:
   hard_wrap: false
 
 gems: ['jekyll-paginate']
-exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
 apps: ['example', 'freesurfer', 'ndmg', 'BROCCOLI', 'FibreDensityAndCrosssection', 'SPM',
 'mriqc', 'QAP', 'CPAC', 'hyperalignment', 'mindboggle', 'MRtrix3_connectome',
 'rs_signal_extract', 'aa', 'niak', 'oppni', 'fmriprep', 'brainiak-srm',
