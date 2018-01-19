@@ -9,31 +9,31 @@ layout: default
   <table>
   {% for app in site.apps %}
     <tr>
-      <td><a href="http://github.com/BIDS-Apps/{{ app }}">bids/{{ app }}</a></td>
-      <td><img src="https://images.microbadger.com/badges/version/bids/{{ app | downcase }}.svg" /></td>
+      <td><a href="http://github.com/{{ app.gh }}">{{ app.gh }}</a></td>
+      <td><img src="https://images.microbadger.com/badges/version/{{ app.dh | downcase }}.svg" /></td>
       <td>
-        <a href="http://github.com/BIDS-Apps/{{ app }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug">
-          <img src="https://img.shields.io/github/issues-raw/BIDS-Apps/{{ app }}/bug.svg?maxAge=2592000" />
+        <a href="http://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug">
+          <img src="https://img.shields.io/github/issues-raw/{{ app.gh }}/bug.svg?maxAge=2592000" />
         </a>
       </td>
       <td>
-        <a href="https://circleci.com/gh/BIDS-Apps/{{ app }}/tree/master">
-          <img src="https://img.shields.io/circleci/project/BIDS-Apps/{{ app }}/master.svg?maxAge=2592000" />
+        <a href="https://circleci.com/gh/{{ app.gh }}/tree/master">
+          <img src="https://img.shields.io/circleci/project/{{ app.gh }}/master.svg?maxAge=2592000" />
         </a>
       </td>
       <td>
-        <a href="http://github.com/BIDS-Apps/{{ app }}/pulls">
-          <img src="https://img.shields.io/github/issues-pr-raw/BIDS-Apps/{{ app }}/bug.svg?maxAge=2592000" />
+        <a href="http://github.com/{{ app.gh }}/pulls">
+          <img src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg?maxAge=2592000" />
         </a>
       </td>
       <td>
         <a href="https://hub.docker.com/r/bids/{{ app | downcase }}/">
-          <img src="https://img.shields.io/docker/pulls/bids/{{ app | downcase }}.svg?maxAge=2592000" />
+          <img src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg?maxAge=2592000" />
         </a>
       </td>
 	  <td>
         <a href="https://hub.docker.com/r/bids/{{ app | downcase }}/">
-          <img src="https://images.microbadger.com/badges/image/bids/{{ app | downcase }}.svg" />
+          <img src="https://images.microbadger.com/badges/image/{{ app.dh | downcase }}.svg" />
         </a>
       </td>
     </tr>
