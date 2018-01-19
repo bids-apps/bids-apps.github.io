@@ -27,12 +27,12 @@ layout: default
         </a>
       </td>
       <td>
-        <a href="https://hub.docker.com/r/bids/{{ app | downcase }}/">
+        <a href="https://hub.docker.com/r/bids/{{ app.dh | downcase }}/">
           <img src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg?maxAge=2592000" />
         </a>
       </td>
 	  <td>
-        <a href="https://hub.docker.com/r/bids/{{ app | downcase }}/">
+        <a href="https://hub.docker.com/r/bids/{{ app.dh | downcase }}/">
           <img src="https://images.microbadger.com/badges/image/{{ app.dh | downcase }}.svg" />
         </a>
       </td>
