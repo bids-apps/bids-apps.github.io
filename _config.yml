@@ -97,3 +97,5 @@ apps:
     dh: 'bids/dparsf'  
   - gh: 'BIDS-Apps/afni_proc'
     dh: 'bids/afni_proc'
+  - gh: 'BIDS-Apps/rsHRF'
+    dh: 'bids/rshrf'
