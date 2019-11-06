@@ -101,3 +101,5 @@ apps:
     dh: 'bids/rshrf'
   - gh: 'BIDS-Apps/PyMVPA'
     dh: 'bids/pymvpa'
+  - gh: 'PennBBL/qsiprep'
+    dh: 'pennbbl/qsiprep'
