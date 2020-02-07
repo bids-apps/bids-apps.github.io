@@ -85,7 +85,7 @@ apps:
     dh: 'bids/nipypelines'  
   - gh: 'BIDS-Apps/HCPPipelines'
     dh: 'bids/hcppipelines'  
-  - gh: 'BIDS-Apps/MAGeTbrain'
+  - gh: 'BIDS-Apps/MAGeTbrain' Add connectomemapper3 to BIDS-App listing
     dh: 'bids/magetbrain'  
   - gh: 'BIDS-Apps/tracula'
     dh: 'bids/tracula'  
@@ -105,4 +105,6 @@ apps:
     dh: 'pennbbl/qsiprep'
   - gh: 'sebastientourbier/multiscalebrainparcellator'
     dh: 'sebastientourbier/multiscalebrainparcellator'
+  - gh: 'connectomicslab/connectomemapper3'
+    dh: 'sebastientourbier/connectomemapper-bidsapp'
     
