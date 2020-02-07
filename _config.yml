@@ -103,3 +103,5 @@ apps:
     dh: 'bids/pymvpa'
   - gh: 'PennBBL/qsiprep'
     dh: 'pennbbl/qsiprep'
+  - gh: 'sebastientourbier/multiscalebrainparcellator'
+    dh: 'sebastientourbier/multiscalebrainparcellator
