@@ -85,7 +85,7 @@ apps:
     dh: 'bids/nipypelines'  
   - gh: 'BIDS-Apps/HCPPipelines'
     dh: 'bids/hcppipelines'  
-  - gh: 'BIDS-Apps/MAGeTbrain' Add connectomemapper3 to BIDS-App listing
+  - gh: 'BIDS-Apps/MAGeTbrain'
     dh: 'bids/magetbrain'  
   - gh: 'BIDS-Apps/tracula'
     dh: 'bids/tracula'  
