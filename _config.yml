@@ -104,4 +104,5 @@ apps:
   - gh: 'PennBBL/qsiprep'
     dh: 'pennbbl/qsiprep'
   - gh: 'sebastientourbier/multiscalebrainparcellator'
-    dh: 'sebastientourbier/multiscalebrainparcellator
+    dh: 'sebastientourbier/multiscalebrainparcellator'
+    
