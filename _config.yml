@@ -106,4 +106,5 @@ apps:
     dh: 'sebastientourbier/multiscalebrainparcellator'
   - gh: 'connectomicslab/connectomemapper3'
     dh: 'sebastientourbier/connectomemapper-bidsapp'
-    
+  - gh: 'PeerHerholz/BIDSonym'
+    dh: 'peerherholz/bidsonym'
