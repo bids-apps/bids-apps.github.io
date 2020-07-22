@@ -102,3 +102,8 @@ apps:
     dh: 'bids/pymvpa'
   - gh: 'PennBBL/qsiprep'
     dh: 'pennbbl/qsiprep'
+  - gh: 'sebastientourbier/multiscalebrainparcellator'
+    dh: 'sebastientourbier/multiscalebrainparcellator'
+  - gh: 'connectomicslab/connectomemapper3'
+    dh: 'sebastientourbier/connectomemapper-bidsapp'
+    
