@@ -8,7 +8,6 @@ exclude:
   - vendor/ruby/
   - any_additional_item
   - README.md
-  - creenshot.png
 
 # Site settings
 title: BIDS Apps
@@ -76,25 +75,25 @@ apps:
   - gh: 'BIDS-Apps/niak'
     dh: 'bids/niak'
   - gh: 'BIDS-Apps/oppni'
-    dh: 'bids/oppni'  
+    dh: 'bids/oppni'
   - gh: 'poldracklab/fmriprep'
-    dh: 'poldracklab/fmriprep'  
+    dh: 'poldracklab/fmriprep'
   - gh: 'BIDS-Apps/brainiak-srm'
-    dh: 'bids/brainiak-srm'  
+    dh: 'bids/brainiak-srm'
   - gh: 'BIDS-Apps/nipypelines'
-    dh: 'bids/nipypelines'  
+    dh: 'bids/nipypelines'
   - gh: 'BIDS-Apps/HCPPipelines'
-    dh: 'bids/hcppipelines'  
+    dh: 'bids/hcppipelines'
   - gh: 'BIDS-Apps/MAGeTbrain'
-    dh: 'bids/magetbrain'  
+    dh: 'bids/magetbrain'
   - gh: 'BIDS-Apps/tracula'
-    dh: 'bids/tracula'  
+    dh: 'bids/tracula'
   - gh: 'BIDS-Apps/baracus'
-    dh: 'bids/baracus'  
+    dh: 'bids/baracus'
   - gh: 'BIDS-Apps/antsCorticalThickness'
-    dh: 'bids/antscorticalthickness'  
+    dh: 'bids/antscorticalthickness'
   - gh: 'BIDS-Apps/DPARSF'
-    dh: 'bids/dparsf'  
+    dh: 'bids/dparsf'
   - gh: 'BIDS-Apps/afni_proc'
     dh: 'bids/afni_proc'
   - gh: 'BIDS-Apps/rsHRF'
@@ -103,3 +102,9 @@ apps:
     dh: 'bids/pymvpa'
   - gh: 'PennBBL/qsiprep'
     dh: 'pennbbl/qsiprep'
+  - gh: 'sebastientourbier/multiscalebrainparcellator'
+    dh: 'sebastientourbier/multiscalebrainparcellator'
+  - gh: 'connectomicslab/connectomemapper3'
+    dh: 'sebastientourbier/connectomemapper-bidsapp'
+  - gh: 'PeerHerholz/BIDSonym'
+    dh: 'peerherholz/bidsonym'
