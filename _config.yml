@@ -108,3 +108,5 @@ apps:
     dh: 'sebastientourbier/connectomemapper-bidsapp'
   - gh: 'PeerHerholz/BIDSonym'
     dh: 'peerherholz/bidsonym'
+  - gh: 'Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit'
+    dh: 'sebastientourbier/mialsuperresolutiontoolkit'
