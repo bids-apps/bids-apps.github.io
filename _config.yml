@@ -110,3 +110,5 @@ apps:
     dh: 'peerherholz/bidsonym'
   - gh: 'Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit'
     dh: 'sebastientourbier/mialsuperresolutiontoolkit'
+  - gh: 'khanlab/hippunfold'
+    dh: 'khanlab/hippunfold'
