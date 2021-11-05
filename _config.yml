@@ -112,3 +112,5 @@ apps:
     dh: 'sebastientourbier/mialsuperresolutiontoolkit'
   - gh: 'khanlab/hippunfold'
     dh: 'khanlab/hippunfold'
+  - gh: 'MICA-MNI/micapipe'
+    dh: 'micalab/micapipe'
