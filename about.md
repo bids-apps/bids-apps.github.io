@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post-container post-container--single">
   <header class="post-header">
     <h1 class="post-title">What is a BIDS App?</h1>
@@ -21,4 +22,5 @@ Docker is used for its excellent documentation, maturity, and the Docker Hub ser
 
 {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
+
 </article>

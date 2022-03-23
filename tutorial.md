@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post-container post-container--single">
   <header class="post-header">
     <h1 class="post-title">Tutorials</h1>
@@ -17,7 +18,6 @@ layout: default
       /bids_dataset /outputs participant --participant_label 01
   {% endhighlight %}
   <p>This command runs docker with some flags and then binds the input directory on our local machine, e.g., <i>/Users/srycajal/data/ds005</i>, to a preset directory inside of the docker container (<i>/bids_dataset</i>). You must use the absolute path to both of these directories. Similarly, we bind the <i>outputs</i> directory on our local machine e.g., <i>/Users/srycajal/outputs</i> to the <i>/outputs</i> directory inside the container. This is the path where results should be stored. Next, the command lists the docker container to download from Docker Hub and run: <i>bids/example:0.0.4</i>. Finally, <i>--participant_label 01</i> limits the data that will be used to just the first subject in the dataset. If we wanted to run all the participants, we would simply remove <i>--participant_label 01</i>. Or we could select a couple of participants like this: <i>--participant_label 01 03</i>. If the BIDS App was not run before on this machine, the docker image will be automatically downloaded from Docker Hub. </p>
-
 
   <h2>Running a BIDS App on a cluster (HPC)</h2>
   <p>Before a BIDS App can be run on a cluster, it first needs to be saved to an Singularity-compatible image file. This step needs to be performed outside of the cluster (for example on a laptop) and requires Docker:</p>
@@ -39,6 +39,7 @@ layout: default
   <a href="https://sites.google.com/a/email.arizona.edu/bmw/resources/bids">BIDS Links and Tips</a>.</p>
   <p><a href="/dev_faq">Developer FAQ</a></p>
 
-  {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
-  {% if page.comments != false %}{% include disqus.html %}{% endif %}
+{% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
+{% if page.comments != false %}{% include disqus.html %}{% endif %}
+
   </article>

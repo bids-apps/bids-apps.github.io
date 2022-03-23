@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post-container post-container--single">
   <header class="post-header">
     <h1 class="post-title">Available BIDS Apps</h1>

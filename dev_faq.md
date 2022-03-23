@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <article class="post-container post-container--single">
   <header class="post-header">
     <h1 class="post-title">Developer FAQ</h1>
@@ -9,11 +10,13 @@ layout: default
     <h2>Versioning</h2>
     <ol>
     <li>When is a new image deposited to Docker Hub?<br>
+
 Even though Docker image is being build on the CI server each time you push a commit to the repository it is not automatically being pushed to Docker Hub. Only if you tag a commit, push the tag to GitHub, and the tests you configured pass a new image will be deposited in Docker Hub. How to tag a new release?
 {% highlight bash %}
 git tag v0.0.1
 git push --tags
 {% endhighlight %}</li>
+
 <li>How should I version my BIDS App?<br>
 Since most BIDS Apps are just thin wrappers around existing pipelines it would be most sensible to use the same version as the software they are wrapping. For example in case of HCP Pipelines this would be v3.17.0</li>
 
@@ -36,4 +39,5 @@ docker pull bids/example:v0.0.5
 
 {% if page.comments != false and site.disqus_shortname %}<section id="disqus_thread"></section><!-- /#disqus_thread -->{% endif %}
 {% if page.comments != false %}{% include disqus.html %}{% endif %}
+
 </article>

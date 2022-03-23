@@ -11,23 +11,22 @@ exclude:
 
 # Site settings
 title: BIDS Apps
-description: 'portable neuroimaging pipelines that understand BIDS datasets'
-url: 'http://bids-apps.neuroimaging.io/'
-baseurl: ''
+description: "portable neuroimaging pipelines that understand BIDS datasets"
+url: "http://bids-apps.neuroimaging.io/"
+baseurl: ""
 # google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: 'bids-apps'
+disqus_shortname: "bids-apps"
 
 author:
-  name: 'Chris Gorgolewski'
+  name: "Chris Gorgolewski"
   #github_username:  BIDS-Apps
 
 defaults:
-  -
-    scope:
-      path: ''
-      type: 'posts'
+  - scope:
+      path: ""
+      type: "posts"
     values:
-        layout: 'post'
+      layout: "post"
 
 # Build settings
 destination: _site
@@ -42,75 +41,75 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ['jekyll-paginate']
+gems: ["jekyll-paginate"]
 apps:
-  - gh: 'BIDS-Apps/example'
-    dh: 'bids/example'
-  - gh: 'BIDS-Apps/freesurfer'
-    dh: 'bids/freesurfer'
-  - gh: 'BIDS-Apps/ndmg'
-    dh: 'bids/ndmg'
-  - gh: 'BIDS-Apps/BROCCOLI'
-    dh: 'bids/broccoli'
-  - gh: 'BIDS-Apps/FibreDensityAndCrosssection'
-    dh: 'bids/fibredensityandcrosssection'
-  - gh: 'BIDS-Apps/SPM'
-    dh: 'bids/spm'
-  - gh: 'poldracklab/mriqc'
-    dh: 'poldracklab/mriqc'
-  - gh: 'BIDS-Apps/QAP'
-    dh: 'bids/qap'
-  - gh: 'BIDS-Apps/CPAC'
-    dh: 'bids/cpac'
-  - gh: 'BIDS-Apps/hyperalignment'
-    dh: 'bids/hyperalignment'
-  - gh: 'BIDS-Apps/mindboggle'
-    dh: 'bids/mindboggle'
-  - gh: 'BIDS-Apps/MRtrix3_connectome'
-    dh: 'bids/mrtrix3_connectome'
-  - gh: 'BIDS-Apps/rs_signal_extract'
-    dh: 'bids/rs_signal_extract'
-  - gh: 'BIDS-Apps/aa'
-    dh: 'bids/aa'
-  - gh: 'BIDS-Apps/niak'
-    dh: 'bids/niak'
-  - gh: 'BIDS-Apps/oppni'
-    dh: 'bids/oppni'
-  - gh: 'nipreps/fmriprep'
-    dh: 'nipreps/fmriprep'
-  - gh: 'BIDS-Apps/brainiak-srm'
-    dh: 'bids/brainiak-srm'
-  - gh: 'BIDS-Apps/nipypelines'
-    dh: 'bids/nipypelines'
-  - gh: 'BIDS-Apps/HCPPipelines'
-    dh: 'bids/hcppipelines'
-  - gh: 'BIDS-Apps/MAGeTbrain'
-    dh: 'bids/magetbrain'
-  - gh: 'BIDS-Apps/tracula'
-    dh: 'bids/tracula'
-  - gh: 'BIDS-Apps/baracus'
-    dh: 'bids/baracus'
-  - gh: 'BIDS-Apps/antsCorticalThickness'
-    dh: 'bids/antscorticalthickness'
-  - gh: 'BIDS-Apps/DPARSF'
-    dh: 'bids/dparsf'
-  - gh: 'BIDS-Apps/afni_proc'
-    dh: 'bids/afni_proc'
-  - gh: 'BIDS-Apps/rsHRF'
-    dh: 'bids/rshrf'
-  - gh: 'BIDS-Apps/PyMVPA'
-    dh: 'bids/pymvpa'
-  - gh: 'PennBBL/qsiprep'
-    dh: 'pennbbl/qsiprep'
-  - gh: 'sebastientourbier/multiscalebrainparcellator'
-    dh: 'sebastientourbier/multiscalebrainparcellator'
-  - gh: 'connectomicslab/connectomemapper3'
-    dh: 'sebastientourbier/connectomemapper-bidsapp'
-  - gh: 'PeerHerholz/BIDSonym'
-    dh: 'peerherholz/bidsonym'
-  - gh: 'Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit'
-    dh: 'sebastientourbier/mialsuperresolutiontoolkit'
-  - gh: 'khanlab/hippunfold'
-    dh: 'khanlab/hippunfold'
-  - gh: 'MICA-MNI/micapipe'
-    dh: 'micalab/micapipe'
+  - gh: "BIDS-Apps/example"
+    dh: "bids/example"
+  - gh: "BIDS-Apps/freesurfer"
+    dh: "bids/freesurfer"
+  - gh: "BIDS-Apps/ndmg"
+    dh: "bids/ndmg"
+  - gh: "BIDS-Apps/BROCCOLI"
+    dh: "bids/broccoli"
+  - gh: "BIDS-Apps/FibreDensityAndCrosssection"
+    dh: "bids/fibredensityandcrosssection"
+  - gh: "BIDS-Apps/SPM"
+    dh: "bids/spm"
+  - gh: "poldracklab/mriqc"
+    dh: "poldracklab/mriqc"
+  - gh: "BIDS-Apps/QAP"
+    dh: "bids/qap"
+  - gh: "BIDS-Apps/CPAC"
+    dh: "bids/cpac"
+  - gh: "BIDS-Apps/hyperalignment"
+    dh: "bids/hyperalignment"
+  - gh: "BIDS-Apps/mindboggle"
+    dh: "bids/mindboggle"
+  - gh: "BIDS-Apps/MRtrix3_connectome"
+    dh: "bids/mrtrix3_connectome"
+  - gh: "BIDS-Apps/rs_signal_extract"
+    dh: "bids/rs_signal_extract"
+  - gh: "BIDS-Apps/aa"
+    dh: "bids/aa"
+  - gh: "BIDS-Apps/niak"
+    dh: "bids/niak"
+  - gh: "BIDS-Apps/oppni"
+    dh: "bids/oppni"
+  - gh: "nipreps/fmriprep"
+    dh: "nipreps/fmriprep"
+  - gh: "BIDS-Apps/brainiak-srm"
+    dh: "bids/brainiak-srm"
+  - gh: "BIDS-Apps/nipypelines"
+    dh: "bids/nipypelines"
+  - gh: "BIDS-Apps/HCPPipelines"
+    dh: "bids/hcppipelines"
+  - gh: "BIDS-Apps/MAGeTbrain"
+    dh: "bids/magetbrain"
+  - gh: "BIDS-Apps/tracula"
+    dh: "bids/tracula"
+  - gh: "BIDS-Apps/baracus"
+    dh: "bids/baracus"
+  - gh: "BIDS-Apps/antsCorticalThickness"
+    dh: "bids/antscorticalthickness"
+  - gh: "BIDS-Apps/DPARSF"
+    dh: "bids/dparsf"
+  - gh: "BIDS-Apps/afni_proc"
+    dh: "bids/afni_proc"
+  - gh: "BIDS-Apps/rsHRF"
+    dh: "bids/rshrf"
+  - gh: "BIDS-Apps/PyMVPA"
+    dh: "bids/pymvpa"
+  - gh: "PennBBL/qsiprep"
+    dh: "pennbbl/qsiprep"
+  - gh: "sebastientourbier/multiscalebrainparcellator"
+    dh: "sebastientourbier/multiscalebrainparcellator"
+  - gh: "connectomicslab/connectomemapper3"
+    dh: "sebastientourbier/connectomemapper-bidsapp"
+  - gh: "PeerHerholz/BIDSonym"
+    dh: "peerherholz/bidsonym"
+  - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
+    dh: "sebastientourbier/mialsuperresolutiontoolkit"
+  - gh: "khanlab/hippunfold"
+    dh: "khanlab/hippunfold"
+  - gh: "MICA-MNI/micapipe"
+    dh: "micalab/micapipe"
