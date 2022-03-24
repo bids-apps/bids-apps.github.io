@@ -21,7 +21,9 @@ disqus_shortname: "bids-apps"
 
 author:
   name: "BIDS maintainers"
-  #github_username:  BIDS-Apps
+  twitter_username: bidsstandard
+  email: bids.maintenance+apps@gmail.com
+  github_username: bids-standard
 
 defaults:
   - scope:
@@ -45,9 +47,15 @@ kramdown:
 
 gems: ["jekyll-paginate"]
 
-pages:
-  - src: "BIDS-Apps/example"
-    name: "bids/example"
+navigation:
+  - src: "apps"
+    name: "Apps"
+  - src: "about"
+    name: "About"
+  - src: "tutorial"
+    name: "Tutorials"
+  - src: "dev_faq"
+    name: "Developper FAQ"
 
 apps:
   - gh: "BIDS-Apps/example"
