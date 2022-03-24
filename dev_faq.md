@@ -27,7 +27,7 @@ example in case of HCP Pipelines this would be `v3.17.0`.
 
 ### I want to release a new version of a BIDS App, but the pipeline version is the same?
 
-This cna happen when only the runscript or the Dockerfile changed?
+This can happen when only the runscript or the Dockerfile changed?
 
 According to semantic versioning we should use the `+` signed followed by the
 build number. Unfortunately Docker Hub does not support semantic versioning. The

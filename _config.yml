@@ -47,6 +47,9 @@ kramdown:
 
 gems: ["jekyll-paginate"]
 
+# Defines buttons and links to the pages that will be displayed in the nav bar
+# see _includes/header.html
+# If the markdown document in the root of the repo is foo.md, then "src" must be "foo"
 navigation:
   - src: "apps"
     name: "Apps"

@@ -1,6 +1,7 @@
 # Contributing to BIDS Apps
 
 - [Contributing to BIDS Apps](#contributing-to-bids-apps)
+  - [Repo map](#repo-map)
   - [:technologist: You can contribute to BIDS-Apps by:](#technologist-you-can-contribute-to-bids-apps-by)
   - [Report a valid issue :heavy_check_mark:](#report-a-valid-issue-heavy_check_mark)
   - [Labels :label:](#labels-label)
@@ -37,6 +38,51 @@ account and sign in. Here are some
 
 Not Familiar with Git? Invest a few minutes on this
 [Git Tutorial](https://git-scm.com/docs/gittutorial) :octocat:
+
+## Repo map
+
+To help you find what is where.
+
+```bash
+.
+├── _includes  # defines layout for typical page sections
+├── _layouts   # defines layout for typical page
+├── _posts     # not used
+├── css
+├── fonts
+├── js
+├── images
+├── _config.yml # the 'control room' for the website
+├── index.html  # landing page
+├── about.md      # page see navigation section in _config.yml
+├── apps.md       # page see navigation section in _config.yml
+├── dev_faq.md    # page see navigation section in _config.yml
+├── tutorial.md   # page see navigation section in _config.yml
+├── CNAME
+├── README.md
+├── CONTRIBUTING.md
+├── LICENSE
+├── feed.xml
+├── Gemfile
+├── sitemap.xml
+├── categories.md
+└── tags.md
+```
+
+To add a page:
+
+1. add a markdown document in the root directory with this YML frontmatter (see
+   the [tutorials](./tutorial.md) for an example.)
+
+```yml
+---
+layout: post
+title: your title goes here
+---
+```
+
+1. List it in the `navigation` section of the [\_config.yml](./_config.yml)
+   file.
 
 ## :technologist: You can contribute to BIDS-Apps by:
 

@@ -20,6 +20,7 @@
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
               {% for page in site.navigation %}
+
               <li class="navigation__item">
                 <a
                   href="/{{ page.src }}"
@@ -28,6 +29,7 @@
                   >{{ page.name }}</a
                 >
               </li>
+
               {% endfor %}
             </ul>
           </nav>

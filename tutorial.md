@@ -44,11 +44,11 @@ Singularity-compatible image file. This step needs to be performed outside of
 the cluster (for example on a laptop) and requires Docker:
 
 ```bash
-  docker run --privileged -ti --rm  \
-      -v /var/run/docker.sock:/var/run/docker.sock \
-      -v /home/srycajal/singularity_images:/output \
-      singularityware/docker2singularity \
-      bids/example:0.0.4
+docker run --privileged -ti --rm  \
+    -v /var/run/docker.sock:/var/run/docker.sock \
+    -v /home/srycajal/singularity_images:/output \
+    singularityware/docker2singularity \
+    bids/example:0.0.4
 ```
 
 Where `/home/srycajal/singularity_images` is a path where the image will be
@@ -56,7 +56,7 @@ stored. After transferring the .img file to a cluster it can be run like any
 other executable:
 
 ```bash
-  ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
+./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
 ```
 
 To learn more:
