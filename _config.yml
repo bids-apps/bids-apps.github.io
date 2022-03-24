@@ -62,35 +62,49 @@ navigation:
     name: "Developper FAQ"
 
 apps:
-  - gh: "BIDS-Apps/example"
-    dh: "bids/example"
+  # apps that are part of the bids apps github organization
+  # sorted alphabetically by app name
+  - gh: "BIDS-Apps/aa"
+    dh: "bids/aa"
 
-  - gh: "BIDS-Apps/freesurfer"
-    dh: "bids/freesurfer"
+  - gh: "BIDS-Apps/afni_proc"
+    dh: "bids/afni_proc"
 
-  - gh: "BIDS-Apps/ndmg"
-    dh: "bids/ndmg"
+  - gh: "BIDS-Apps/antsCorticalThickness"
+    dh: "bids/antscorticalthickness"
+
+  - gh: "BIDS-Apps/baracus"
+    dh: "bids/baracus"
+
+  - gh: "BIDS-Apps/brainiak-srm"
+    dh: "bids/brainiak-srm"
 
   - gh: "BIDS-Apps/BROCCOLI"
     dh: "bids/broccoli"
 
-  - gh: "BIDS-Apps/FibreDensityAndCrosssection"
-    dh: "bids/fibredensityandcrosssection"
-
-  - gh: "BIDS-Apps/SPM"
-    dh: "bids/spm"
-
-  - gh: "poldracklab/mriqc"
-    dh: "poldracklab/mriqc"
-
-  - gh: "BIDS-Apps/QAP"
-    dh: "bids/qap"
-
   - gh: "BIDS-Apps/CPAC"
     dh: "bids/cpac"
 
+  - gh: "BIDS-Apps/DPARSF"
+    dh: "bids/dparsf"
+
+  - gh: "BIDS-Apps/example"
+    dh: "bids/example"
+
+  - gh: "BIDS-Apps/FibreDensityAndCrosssection"
+    dh: "bids/fibredensityandcrosssection"
+
+  - gh: "BIDS-Apps/freesurfer"
+    dh: "bids/freesurfer"
+
+  - gh: "BIDS-Apps/HCPPipelines"
+    dh: "bids/hcppipelines"
+
   - gh: "BIDS-Apps/hyperalignment"
     dh: "bids/hyperalignment"
+
+  - gh: "BIDS-Apps/MAGeTbrain"
+    dh: "bids/magetbrain"
 
   - gh: "BIDS-Apps/mindboggle"
     dh: "bids/mindboggle"
@@ -98,71 +112,62 @@ apps:
   - gh: "BIDS-Apps/MRtrix3_connectome"
     dh: "bids/mrtrix3_connectome"
 
-  - gh: "BIDS-Apps/rs_signal_extract"
-    dh: "bids/rs_signal_extract"
-
-  - gh: "BIDS-Apps/aa"
-    dh: "bids/aa"
+  - gh: "BIDS-Apps/ndmg"
+    dh: "bids/ndmg"
 
   - gh: "BIDS-Apps/niak"
     dh: "bids/niak"
 
-  - gh: "BIDS-Apps/oppni"
-    dh: "bids/oppni"
-
-  - gh: "nipreps/fmriprep"
-    dh: "nipreps/fmriprep"
-
-  - gh: "BIDS-Apps/brainiak-srm"
-    dh: "bids/brainiak-srm"
-
   - gh: "BIDS-Apps/nipypelines"
     dh: "bids/nipypelines"
 
-  - gh: "BIDS-Apps/HCPPipelines"
-    dh: "bids/hcppipelines"
-
-  - gh: "BIDS-Apps/MAGeTbrain"
-    dh: "bids/magetbrain"
-
-  - gh: "BIDS-Apps/tracula"
-    dh: "bids/tracula"
-
-  - gh: "BIDS-Apps/baracus"
-    dh: "bids/baracus"
-
-  - gh: "BIDS-Apps/antsCorticalThickness"
-    dh: "bids/antscorticalthickness"
-
-  - gh: "BIDS-Apps/DPARSF"
-    dh: "bids/dparsf"
-
-  - gh: "BIDS-Apps/afni_proc"
-    dh: "bids/afni_proc"
-
-  - gh: "BIDS-Apps/rsHRF"
-    dh: "bids/rshrf"
+  - gh: "BIDS-Apps/oppni"
+    dh: "bids/oppni"
 
   - gh: "BIDS-Apps/PyMVPA"
     dh: "bids/pymvpa"
 
-  - gh: "PennBBL/qsiprep"
-    dh: "pennbbl/qsiprep"
+  - gh: "BIDS-Apps/QAP"
+    dh: "bids/qap"
 
-  - gh: "sebastientourbier/multiscalebrainparcellator"
-    dh: "sebastientourbier/multiscalebrainparcellator"
+  - gh: "BIDS-Apps/rs_signal_extract"
+    dh: "bids/rs_signal_extract"
 
-  - gh: "connectomicslab/connectomemapper3"
-    dh: "sebastientourbier/connectomemapper-bidsapp"
+  - gh: "BIDS-Apps/rsHRF"
+    dh: "bids/rshrf"
 
-  - gh: "PeerHerholz/BIDSonym"
-    dh: "peerherholz/bidsonym"
+  - gh: "BIDS-Apps/SPM"
+    dh: "bids/spm"
 
-  - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
-    dh: "sebastientourbier/mialsuperresolutiontoolkit"
+  - gh: "BIDS-Apps/tracula"
+    dh: "bids/tracula"
+
+  # apps hosted somewhere else
+  # sorted alphabetically by dh
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
 
   - gh: "MICA-MNI/micapipe"
     dh: "micalab/micapipe"
+
+  - gh: "nipreps/fmriprep"
+    dh: "nipreps/fmriprep"
+
+  - gh: "PeerHerholz/BIDSonym"
+    dh: "peerherholz/bidsonym"
+
+  - gh: "PennBBL/qsiprep"
+    dh: "pennbbl/qsiprep"
+
+  - gh: "poldracklab/mriqc"
+    dh: "poldracklab/mriqc"
+
+  - gh: "connectomicslab/connectomemapper3"
+    dh: "sebastientourbier/connectomemapper-bidsapp"
+
+  - gh: "sebastientourbier/multiscalebrainparcellator"
+    dh: "sebastientourbier/multiscalebrainparcellator"
+
+  - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
+    dh: "sebastientourbier/mialsuperresolutiontoolkit"
