@@ -19,38 +19,16 @@
         <div class="navigation-wrapper">
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
+              {% for page in site.navigation %}
               <li class="navigation__item">
                 <a
-                  href="/about"
-                  title="link to {{ site.title }} about"
+                  href="/{{ page.src }}"
+                  title="link to {{ site.title }} {{ page.name }}"
                   class="slide-button"
-                  >About</a
+                  >{{ page.name }}</a
                 >
               </li>
-              <li class="navigation__item">
-                <a
-                  href="/tutorial"
-                  title="link to {{ site.title }} tutorial"
-                  class="slide-button"
-                  >Tutorials</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  href="/apps"
-                  title="link to {{ site.title }} apps"
-                  class="slide-button"
-                  >Apps</a
-                >
-              </li>
-              <li class="navigation__item">
-                <a
-                  href="/dev_faq"
-                  title="link to {{ site.title }} apps"
-                  class="slide-button"
-                  >Developper FAQ</a
-                >
-              </li>
+              {% endfor %}
             </ul>
           </nav>
 
