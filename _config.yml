@@ -42,6 +42,12 @@ kramdown:
   hard_wrap: false
 
 gems: ["jekyll-paginate"]
+
+pages:
+  - src: "BIDS-Apps/example"
+    name: "bids/example"
+
+
 apps:
   - gh: "BIDS-Apps/example"
     dh: "bids/example"
