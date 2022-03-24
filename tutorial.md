@@ -59,10 +59,14 @@ other executable:
 ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
 ```
 
-To learn more:
+## Helpful links
 
-- read the
-  [PLOS paper](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209)
+To learn more containers:
+
 - consult this
   [tutorial](https://neurohackweek.github.io/docker-for-scientists/)
 - watch the [workshop video](https://www.youtube.com/watch?v=wAATYzn8O54)
+
+BIDS apps tutorials:
+
+- see this intro to [BIDS apps](https://github.com/fliem/bids_apps_intro)

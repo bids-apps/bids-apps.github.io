@@ -35,3 +35,7 @@ container execution and thus is safe to use on multi-tenant systems. In
 addition, it does not require recent Linux kernel functionalities (such as
 namespaces, cgroups and capabilities), making it easy to install on legacy
 systems.
+
+To learn more BIDS apps:
+
+- read the [Plos Comp Bio](https://doi.org/10.1371/journal.pcbi.1005209)
