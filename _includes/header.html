@@ -36,8 +36,8 @@
 
           <nav class="cover-navigation navigation--social">
             <ul class="navigation">
-              {% if site.author.twitter_username %}
               <!-- Twitter -->
+              {% if site.author.twitter_username %}
               <li class="navigation__item">
                 <a
                   href="http://twitter.com/{{ site.author.twitter_username }}"
@@ -48,8 +48,10 @@
                   <span class="label">Twitter</span>
                 </a>
               </li>
-              {% endif %} {% if site.author.facebook_username %}
+              {% endif %}
+
               <!-- Facebook -->
+              {% if site.author.facebook_username %}
               <li class="navigation__item">
                 <a
                   href="http://fb.me/{{ site.author.facebook_username }}"
@@ -60,8 +62,10 @@
                   <span class="label">Facebook</span>
                 </a>
               </li>
-              {% endif %} {% if site.author.github_username %}
+              {% endif %}
+
               <!-- GitHub -->
+              {% if site.author.github_username %}
               <li class="navigation__item">
                 <a
                   href="https://www.github.com/{{ site.author.github_username }}"
@@ -72,8 +76,10 @@
                   <span class="label">GitHub</span>
                 </a>
               </li>
-              {% endif %} {% if site.author.email %}
+              {% endif %}
+
               <!-- Email -->
+              {% if site.author.email %}
               <li class="navigation__item">
                 <a
                   href="mailto:{{ site.author.email }}"
