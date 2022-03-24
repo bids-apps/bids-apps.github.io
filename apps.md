@@ -44,13 +44,6 @@ layout: default
           />
         </a>
       </td>
-      <td>
-        <a href="https://hub.docker.com/r/{{ app.dh | downcase }}/">
-          <img
-            src="https://images.microbadger.com/badges/image/{{ app.dh | downcase }}.svg"
-          />
-        </a>
-      </td>
     </tr>
     {% endfor %}
   </table>
