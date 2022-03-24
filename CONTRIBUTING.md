@@ -1,7 +1,7 @@
 # Contributing to BIDS Apps
 
 - [Contributing to BIDS Apps](#contributing-to-bids-apps)
-  - [Repo map](#repo-map)
+  - [Repository map](#repository-map)
   - [:technologist: You can contribute to BIDS-Apps by:](#technologist-you-can-contribute-to-bids-apps-by)
   - [Report a valid issue :heavy_check_mark:](#report-a-valid-issue-heavy_check_mark)
   - [Labels :label:](#labels-label)
@@ -39,7 +39,7 @@ account and sign in. Here are some
 Not Familiar with Git? Invest a few minutes on this
 [Git Tutorial](https://git-scm.com/docs/gittutorial) :octocat:
 
-## Repo map
+## Repository map
 
 To help you find what is where.
 
@@ -47,7 +47,7 @@ To help you find what is where.
 .
 ├── _includes  # defines layout for typical page sections
 ├── _layouts   # defines layout for typical page
-├── _posts     # not used
+├── _posts     # not currently used
 ├── css
 ├── fonts
 ├── js
