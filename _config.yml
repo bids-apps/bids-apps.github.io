@@ -8,6 +8,8 @@ exclude:
   - vendor/ruby/
   - any_additional_item
   - README.md
+  - CONTRIBUTING.md
+  - LICENSE
 
 # Site settings
 title: BIDS Apps
@@ -18,7 +20,7 @@ baseurl: ""
 disqus_shortname: "bids-apps"
 
 author:
-  name: "Chris Gorgolewski"
+  name: "BIDS maintainers"
   #github_username:  BIDS-Apps
 
 defaults:
@@ -46,7 +48,6 @@ gems: ["jekyll-paginate"]
 pages:
   - src: "BIDS-Apps/example"
     name: "bids/example"
-
 
 apps:
   - gh: "BIDS-Apps/example"
