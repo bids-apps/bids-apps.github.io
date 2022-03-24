@@ -8,11 +8,11 @@ title: Running a BIDS App
 Running a BIDS App on a local system can be performed using Docker, which is
 easy to install on all three major operating systems. After installing and
 starting docker, download the relevant data,
-<a href="https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8">ds005.tar</a>,
-and untar it in a directory. <i>ds005</i> will be our input directory in the
-following example. Create an <i>outputs</i> directory as well. To run the first
-stage of the example BIDS App for participant number 01, open a console
-(terminal or cmd) and type:
+[ds005.tar](https://drive.google.com/drive/folders/0B2JWN60ZLkgkMGlUY3B4MXZIZW8),
+and untar it in a directory. `ds005` will be our input directory in the
+following example. Create an `outputs` directory as well. To run the first stage
+of the example BIDS App for participant number 01, open a console (terminal or
+cmd) and type:
 
 ```bash
 docker run -ti --rm \
@@ -23,36 +23,46 @@ docker run -ti --rm \
 ```
 
 This command runs docker with some flags and then binds the input directory on
-our local machine, e.g., <i>/Users/srycajal/data/ds005</i>, to a preset
-directory inside of the docker container (<i>/bids_dataset</i>). You must use
-the absolute path to both of these directories. Similarly, we bind the
-<i>outputs</i> directory on our local machine e.g.,
-<i>/Users/srycajal/outputs</i> to the <i>/outputs</i> directory inside the
-container. This is the path where results should be stored. Next, the command
-lists the docker container to download from Docker Hub and run:
-<i>bids/example:0.0.4</i>. Finally, <i>--participant_label 01</i> limits the
-data that will be used to just the first subject in the dataset. If we wanted to
-run all the participants, we would simply remove <i>--participant_label 01</i>.
-Or we could select a couple of participants like this: <i>--participant_label 01
-03</i>. If the BIDS App was not run before on this machine, the docker image
-will be automatically downloaded from Docker Hub.
+our local machine, for example, `/Users/srycajal/data/ds005`, to a preset
+directory inside of the docker container (`/bids_dataset`). You must use the
+absolute path to both of these directories. Similarly, we bind the `outputs`
+directory on our local machine e.g., `/Users/srycajal/outputs` to the `/outputs`
+directory inside the container. This is the path where results should be stored.
+
+Next, the command lists the docker container to download from Docker Hub and
+run: `bids/example:0.0.4`. Finally, `--participant_label 01` limits the data
+that will be used to just the first subject in the dataset. If we wanted to run
+all the participants, we would simply remove `--participant_label 01`. Or we
+could select a couple of participants like this: `--participant_label 01 03`. If
+the BIDS App was not run before on this machine, the docker image will be
+automatically downloaded from Docker Hub.
 
 ## Running a BIDS App on a cluster (HPC)
 
-  <p>Before a BIDS App can be run on a cluster, it first needs to be saved to an Singularity-compatible image file. This step needs to be performed outside of the cluster (for example on a laptop) and requires Docker:</p>
-  {% highlight bash %}
+Before a BIDS App can be run on a cluster, it first needs to be saved to an
+Singularity-compatible image file. This step needs to be performed outside of
+the cluster (for example on a laptop) and requires Docker:
+
+```bash
   docker run --privileged -ti --rm  \
       -v /var/run/docker.sock:/var/run/docker.sock \
       -v /home/srycajal/singularity_images:/output \
       singularityware/docker2singularity \
       bids/example:0.0.4
-  {% endhighlight %}
-  <p>Where /home/srycajal/singularity_images is a path where the image will be stored. After transferring the .img file to a cluster it can be run like any other executable:</p>
-  {% highlight bash %}
+```
+
+Where `/home/srycajal/singularity_images` is a path where the image will be
+stored. After transferring the .img file to a cluster it can be run like any
+other executable:
+
+```bash
   ./bids_example-0.0.4.img /bids_dataset /outputs participant --participant_label 01
-  {% endhighlight %}
-  <p>To learn more, read the
-  <a href="http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209">PLOS paper</a> consult this
-  <a href="https://neurohackweek.github.io/docker-for-scientists/">tutorial</a> and watch the
-  <a href="https://www.slideshare.net/chrisfilo1/docker-for-scientists">workshop video</a>. Additional links and tips can be found here:
-  <a href="https://sites.google.com/a/email.arizona.edu/bmw/resources/bids">BIDS Links and Tips</a>.</p>
+```
+
+To learn more:
+
+- read the
+  [PLOS paper](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005209)
+- consult this
+  [tutorial](https://neurohackweek.github.io/docker-for-scientists/)
+- watch the [workshop video](https://www.youtube.com/watch?v=wAATYzn8O54)
