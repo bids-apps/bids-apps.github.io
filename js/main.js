@@ -1,6 +1,3 @@
----
-layout: null
----
 $(document).ready(function () {
   $('a.slide-button').click(function (e) {
     if ($('.panel-cover').hasClass('panel-cover--collapsed')) return

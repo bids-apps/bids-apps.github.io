@@ -1,22 +1,23 @@
+# runs 'bundle install' and caches installed gems automatically
 name: Ruby Tests
 
 on:
   push:
-    branches: [ master ]
+    branches: ["*"]
   pull_request:
-    branches: [ master ]
+    branches: [master]
 
 jobs:
   test:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 2.6
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Test build
-      run: bundle exec jekyll build
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.6
+          bundler-cache: true
+
+      - name: Test build
+        run: bundle exec jekyll build
