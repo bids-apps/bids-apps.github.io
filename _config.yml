@@ -154,14 +154,26 @@ apps:
   - gh: "nipreps/fmriprep"
     dh: "nipreps/fmriprep"
 
+  - gh: "nipreps/dmriprep"
+    dh: "nipreps/dmriprep"
+
+  - gh: "nipreps/mriqc"
+    dh: "nipreps/mriqc"
+
+  - gh: "nipreps/nibabies"
+    dh: "nipreps/nibabies"
+
+  - gh: "nipreps/nirodents"
+    dh: "nipreps/nirodents"
+
+  - gh: "nipreps/smriprep"
+    dh: "nipreps/smriprep"
+
   - gh: "PeerHerholz/BIDSonym"
     dh: "peerherholz/bidsonym"
 
   - gh: "PennBBL/qsiprep"
     dh: "pennbbl/qsiprep"
-
-  - gh: "poldracklab/mriqc"
-    dh: "poldracklab/mriqc"
 
   - gh: "connectomicslab/connectomemapper3"
     dh: "sebastientourbier/connectomemapper-bidsapp"
