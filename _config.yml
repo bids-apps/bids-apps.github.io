@@ -48,7 +48,6 @@ kramdown:
 plugins:
   - jekyll-paginate
 
-
 # Defines buttons and links to the pages that will be displayed in the nav bar
 # see _includes/header.html
 # If the markdown document in the root of the repo is foo.md, then "src" must be "foo"
@@ -144,7 +143,7 @@ apps:
     dh: "bids/tracula"
 
   # apps hosted somewhere else
-  # sorted alphabetically by dh
+  # sorted alphabetically by DockerHub (dh)
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
