@@ -45,7 +45,9 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ["jekyll-paginate"]
+plugins:
+  - jekyll-paginate
+
 
 # Defines buttons and links to the pages that will be displayed in the nav bar
 # see _includes/header.html
