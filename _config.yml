@@ -17,7 +17,6 @@ description: "portable neuroimaging pipelines that understand BIDS datasets"
 url: "http://bids-apps.neuroimaging.io/"
 baseurl: ""
 # google_analytics: 'UA-XXXXXX-X'
-disqus_shortname: "bids-apps"
 repo_url: "https://github.com/BIDS-Apps/bids-apps.github.io"
 
 author:
