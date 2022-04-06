@@ -58,7 +58,7 @@ navigation:
   - src: "tutorial"
     name: "Tutorials"
   - src: "dev_faq"
-    name: "Developper FAQ"
+    name: "Developer FAQ"
 
 apps:
   # apps that are part of the bids apps github organization
