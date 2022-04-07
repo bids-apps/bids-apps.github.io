@@ -38,7 +38,8 @@ systems.
 
 ## To learn more about BIDS apps
 
-- read the [Plos Comp Bio](https://doi.org/10.1371/journal.pcbi.1005209)
+- read the [journal article](https://doi.org/10.1371/journal.pcbi.1005209)
+- see the [poster presented at OHBM 2017](https://doi.org/10.5281/zenodo.6417361)
 
 ## To learn more about BIDS
 
