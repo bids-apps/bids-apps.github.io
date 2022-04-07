@@ -42,7 +42,7 @@ systems.
 - see the
   [poster presented at OHBM 2017](https://doi.org/10.5281/zenodo.6417361)
 - read the guidelines mentioned in the
-  ["execution" BIDS extension proposal](https://docs.google.com/document/d/104HLZedFtx0TaXEUwd7eyWvJUlc0CcSUtCzwjNgmGxE)
+[BIDS extension proposal 027](https://bids.neuroimaging.io/bep027)
   for more advanced about BIDS Apps.
 
 ## To learn more about BIDS
