@@ -20,7 +20,7 @@ baseurl: ""
 repo_url: "https://github.com/BIDS-Apps/bids-apps.github.io"
 
 author:
-  name: "BIDS maintainers"
+  name: "BIDS Apps contributors"
   twitter_username: bidsstandard
   email: bids.maintenance+apps@gmail.com
   github_username: bids-standard
