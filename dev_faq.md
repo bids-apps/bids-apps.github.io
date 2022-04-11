@@ -47,16 +47,10 @@ The obligatory arguments of the API of any BIDS App are:
 - `output_dir`
 - `analysis_level`
 
-A typical BIDS App call would thus look like
+with an API call that would look like this:
 
 ```bash
-$ bids_dir=/home/jane/input/ds00101
-
-$ output_dir=/home/jane/output/
-
-$ analysis_level=participant
-
-$ BIDSapp_name $bids_dir $output_dir $analysis_level
+app_name bids_dir output_dir analysis_level
 ```
 
 ### Can I add more arguments to the API of my App?
