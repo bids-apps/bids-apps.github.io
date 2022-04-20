@@ -24,6 +24,6 @@ jobs:
                 destination: _site
 
 workflows:
-    lint_and_build:
+    build:
         jobs:
             - build

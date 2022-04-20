@@ -45,7 +45,8 @@ kramdown:
   # do not replace newlines by <br>s
   hard_wrap: false
 
-gems: ["jekyll-paginate"]
+plugins:
+  - jekyll-paginate
 
 # Defines buttons and links to the pages that will be displayed in the nav bar
 # see _includes/header.html
@@ -142,7 +143,7 @@ apps:
     dh: "bids/tracula"
 
   # apps hosted somewhere else
-  # sorted alphabetically by dh
+  # sorted alphabetically by DockerHub (dh)
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
