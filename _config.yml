@@ -145,6 +145,9 @@ apps:
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
+  - gh: 'khanlab/funcmasker-flex'
+    dh: 'khanlab/funcmasker-flex'
+
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
 
