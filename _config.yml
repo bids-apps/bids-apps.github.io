@@ -178,6 +178,9 @@ apps:
   - gh: "PennBBL/qsiprep"
     dh: "pennbbl/qsiprep"
 
+  - gh: "TReNDS/gift-bids"
+    dh: "trends/gift-bids"
+
   - gh: "connectomicslab/connectomemapper3"
     dh: "sebastientourbier/connectomemapper-bidsapp"
 
