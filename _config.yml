@@ -187,5 +187,5 @@ apps:
   - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
     dh: "sebastientourbier/mialsuperresolutiontoolkit"
 
-  - gh: "TReNDS/gift-bids"
-    dh: "trends/gift-bids"
+  - gh: "trendscenter/gift-bids"
+    dh: "trendscenter/gift-bids"
