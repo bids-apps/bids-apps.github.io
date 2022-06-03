@@ -17,7 +17,7 @@ description: "portable neuroimaging pipelines that understand BIDS datasets"
 url: "http://bids-apps.neuroimaging.io/"
 baseurl: ""
 # google_analytics: 'UA-XXXXXX-X'
-repo_url: "https://github.com/BIDS-Apps/bids-apps.github.io"
+repo_url: "https://github.com/bids-apps/bids-apps.github.io"
 
 author:
   name: "BIDS Apps contributors"
@@ -64,82 +64,82 @@ navigation:
 apps:
   # apps that are part of the bids apps github organization
   # sorted alphabetically by app name
-  - gh: "BIDS-Apps/aa"
+  - gh: "bids-apps/aa"
     dh: "bids/aa"
 
-  - gh: "BIDS-Apps/afni_proc"
+  - gh: "bids-apps/afni_proc"
     dh: "bids/afni_proc"
 
-  - gh: "BIDS-Apps/antsCorticalThickness"
+  - gh: "bids-apps/antsCorticalThickness"
     dh: "bids/antscorticalthickness"
 
-  - gh: "BIDS-Apps/baracus"
+  - gh: "bids-apps/baracus"
     dh: "bids/baracus"
 
-  - gh: "BIDS-Apps/brainiak-srm"
+  - gh: "bids-apps/brainiak-srm"
     dh: "bids/brainiak-srm"
 
-  - gh: "BIDS-Apps/BROCCOLI"
+  - gh: "bids-apps/BROCCOLI"
     dh: "bids/broccoli"
 
-  - gh: "BIDS-Apps/CPAC"
+  - gh: "bids-apps/CPAC"
     dh: "bids/cpac"
 
-  - gh: "BIDS-Apps/DPARSF"
+  - gh: "bids-apps/DPARSF"
     dh: "bids/dparsf"
 
-  - gh: "BIDS-Apps/example"
+  - gh: "bids-apps/example"
     dh: "bids/example"
 
-  - gh: "BIDS-Apps/FibreDensityAndCrosssection"
+  - gh: "bids-apps/FibreDensityAndCrosssection"
     dh: "bids/fibredensityandcrosssection"
 
-  - gh: "BIDS-Apps/freesurfer"
+  - gh: "bids-apps/freesurfer"
     dh: "bids/freesurfer"
 
-  - gh: "BIDS-Apps/HCPPipelines"
+  - gh: "bids-apps/HCPPipelines"
     dh: "bids/hcppipelines"
 
-  - gh: "BIDS-Apps/hyperalignment"
+  - gh: "bids-apps/hyperalignment"
     dh: "bids/hyperalignment"
 
-  - gh: "BIDS-Apps/MAGeTbrain"
+  - gh: "bids-apps/MAGeTbrain"
     dh: "bids/magetbrain"
 
-  - gh: "BIDS-Apps/mindboggle"
+  - gh: "bids-apps/mindboggle"
     dh: "bids/mindboggle"
 
-  - gh: "BIDS-Apps/MRtrix3_connectome"
+  - gh: "bids-apps/MRtrix3_connectome"
     dh: "bids/mrtrix3_connectome"
 
-  - gh: "BIDS-Apps/ndmg"
+  - gh: "bids-apps/ndmg"
     dh: "bids/ndmg"
 
-  - gh: "BIDS-Apps/niak"
+  - gh: "bids-apps/niak"
     dh: "bids/niak"
 
-  - gh: "BIDS-Apps/nipypelines"
+  - gh: "bids-apps/nipypelines"
     dh: "bids/nipypelines"
 
-  - gh: "BIDS-Apps/oppni"
+  - gh: "bids-apps/oppni"
     dh: "bids/oppni"
 
-  - gh: "BIDS-Apps/PyMVPA"
+  - gh: "bids-apps/PyMVPA"
     dh: "bids/pymvpa"
 
-  - gh: "BIDS-Apps/QAP"
+  - gh: "bids-apps/QAP"
     dh: "bids/qap"
 
-  - gh: "BIDS-Apps/rs_signal_extract"
+  - gh: "bids-apps/rs_signal_extract"
     dh: "bids/rs_signal_extract"
 
-  - gh: "BIDS-Apps/rsHRF"
+  - gh: "bids-apps/rsHRF"
     dh: "bids/rshrf"
 
-  - gh: "BIDS-Apps/SPM"
+  - gh: "bids-apps/SPM"
     dh: "bids/spm"
 
-  - gh: "BIDS-Apps/tracula"
+  - gh: "bids-apps/tracula"
     dh: "bids/tracula"
 
   # apps hosted somewhere else

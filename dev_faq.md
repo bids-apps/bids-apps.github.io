@@ -25,7 +25,7 @@ title: Developer FAQ
 ## Is there a BIDS App template?
 
 Have a look at the
-[example BIDS App repository](https://github.com/BIDS-Apps/example). A
+[example BIDS App repository](https://github.com/bids-apps/example). A
 minimalist example of a BIDS App consisting of a Dockerfile and a simple entry
 point script (written in this case in Python) accepting the standard BIDS Apps
 command line arguments.
@@ -91,13 +91,13 @@ want to be added to the BIDS docker hub, please message the
 [BIDS maintainers](bids.maintenance+apps@gmail.com) to have a repo created for
 you.
 
-If you base your code on <https://github.com/BIDS-Apps/example> deployment on
+If you base your code on <https://github.com/bids-apps/example> deployment on
 docker hub will happen automatically via Circle-ci.
 
 If you want your App to show on the BIDS App website
 [here](http://bids-apps.neuroimaging.io/apps/)), you will in any case have to
 update the `_config.yml` in the
-[BIDS App website repository](https://github.com/BIDS-Apps/bids-apps.github.io.git).
+[BIDS App website repository](https://github.com/bids-apps/bids-apps.github.io.git).
 
 <!--
 TODO: how do I "submit" an App? Is there a review process? What are the requirements?
@@ -145,7 +145,7 @@ best option is to use the `-` sign followed by the build number. For example
 After tagging a new release it is important to provide a list of changes on the
 GitHub Releases page. It accepts markdown syntax and allows you to explain in
 detail what has changed. Here's an
-[example](https://github.com/BIDS-Apps/example/releases).
+[example](https://github.com/bids-apps/example/releases).
 
 ### How can I check a version of a container I have available locally?
 
