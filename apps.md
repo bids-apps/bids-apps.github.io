@@ -33,14 +33,14 @@ layout: default
       <td>
         <a href="http://github.com/{{ app.gh }}/pulls">
           <img
-            src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg?maxAge=2592000"
+            src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg"
           />
         </a>
       </td>
       <td>
         <a href="https://hub.docker.com/r/{{ app.dh | downcase }}/">
           <img
-            src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg?maxAge=2592000"
+            src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg"
           />
         </a>
       </td>

@@ -175,7 +175,7 @@ apps:
   - gh: "PeerHerholz/BIDSonym"
     dh: "peerherholz/bidsonym"
 
-  - gh: "PennBBL/qsiprep"
+  - gh: "PennLINC/qsiprep"
     dh: "pennbbl/qsiprep"
 
   - gh: "connectomicslab/connectomemapper3"
