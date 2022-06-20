@@ -36,6 +36,34 @@ addition, it does not require recent Linux kernel functionalities (such as
 namespaces, cgroups and capabilities), making it easy to install on legacy
 systems.
 
-To learn more BIDS apps:
+## To learn more about BIDS apps
 
-- read the [Plos Comp Bio](https://doi.org/10.1371/journal.pcbi.1005209)
+- read the [journal article](https://doi.org/10.1371/journal.pcbi.1005209)
+- see the
+  [poster presented at OHBM 2017](https://doi.org/10.5281/zenodo.6417361)
+- read the guidelines mentioned in the
+[BIDS extension proposal 027](https://bids.neuroimaging.io/bep027)
+  for more advanced about BIDS Apps.
+
+## To learn more about BIDS
+
+If you Have a question, comment, or suggestion?
+
+1. Read some introductory material, most likely the very basic problems have
+   already been addressed!
+
+- [BIDS Starter Kit](https://github.com/bids-standard/bids-starter-kit) for
+  tutorials, wikis, templates, ...
+
+2. Post your question in one of several channels where BIDS members are active
+
+- the [NeuroStars](https://neurostars.org/tags/bids) discourse forum
+- the [BrainHack Mattermost](https://mattermost.brainhack.org), for instant
+  messaging (see also this
+  [news item](https://bids.neuroimaging.io/2020/06/24/Join-the-BIDS-community-on-the-BrainHack-Mattermost.html))
+- the [Google group](https://groups.google.com/forum/#!forum/bids-discussion),
+  for broader discussions surrounding BIDS
+- the
+  [specification repository issue page](https://github.com/bids-standard/bids-specification/issues),
+  if you found inconsistencies, typos, or other issues with the BIDS
+  specification itself

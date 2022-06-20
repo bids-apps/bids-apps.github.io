@@ -30,7 +30,7 @@ that accept datasets organized according to the Brain Imaging Data Structure
 These guidelines are designed especially to make the whole process as easy and
 smooth as possible. Still, if something is unclear or not mentioned please don't
 hesitate to ask. [Email us](ffein@stanford.edu) or let us know by opening an
-[issue!](https://github.com/BIDS-Apps/bids-apps.github.io/issues)
+[issue!](https://github.com/bids-apps/bids-apps.github.io/issues)
 
 Before you start you'll need to set up a free [GitHub](https://github.com/)
 account and sign in. Here are some
@@ -87,17 +87,17 @@ title: your title goes here
 ## :technologist: You can contribute to BIDS-Apps by:
 
 - Reporting a valid
-  [issue](https://github.com/BIDS-Apps/bids-apps.github.io/issues)
+  [issue](https://github.com/bids-apps/bids-apps.github.io/issues)
 - Helping us in closing an existing
-  [issue](https://github.com/BIDS-Apps/bids-apps.github.io/issues)
+  [issue](https://github.com/bids-apps/bids-apps.github.io/issues)
 - Opening a
-  [Pull Request](https://github.com/BIDS-Apps/bids-apps.github.io/pulls)
+  [Pull Request](https://github.com/bids-apps/bids-apps.github.io/pulls)
 - Want to discuss something else: [Email us](ffein@stanford.edu)
 
 ## Report a valid issue :heavy_check_mark:
 
 BIDS-Apps uses
-[GitHub's issue tracker](https://github.com/BIDS-Apps/bids-apps.github.io/issues).
+[GitHub's issue tracker](https://github.com/bids-apps/bids-apps.github.io/issues).
 All bugs and enhancements should be listed so that we don't lose track of them,
 can prioritize and assign them to the relevant developer or maintainer.
 
@@ -169,7 +169,7 @@ git clone https://github.com/<USERNAME>/bids-apps.github.io.git
 cd bids-apps.github.io
 
 # Assign the original repo to a remote called "upstream"
-git remote add upstream git@github.com:BIDS-Apps/bids-apps.github.io.git
+git remote add upstream git@github.com:bids-apps/bids-apps.github.io.git
 ```
 
 ### Get the latest changes from upstream:
@@ -240,7 +240,7 @@ the
 ## Get in touch with us :mailbox_with_mail:
 
 If you have any questions, comments, or suggestions, please feel free to create
-an issue [here](https://github.com/BIDS-Apps/bids-apps.github.io/issues)! A
+an issue [here](https://github.com/bids-apps/bids-apps.github.io/issues)! A
 Maintainer or community member will follow up.
 
 If you'd prefer to email then you can contact Franklin at ffein@stanford.edu

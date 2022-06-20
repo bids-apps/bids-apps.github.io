@@ -33,14 +33,14 @@ layout: default
       <td>
         <a href="http://github.com/{{ app.gh }}/pulls">
           <img
-            src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg?maxAge=2592000"
+            src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg"
           />
         </a>
       </td>
       <td>
         <a href="https://hub.docker.com/r/{{ app.dh | downcase }}/">
           <img
-            src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg?maxAge=2592000"
+            src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg"
           />
         </a>
       </td>
@@ -48,10 +48,4 @@ layout: default
     {% endfor %}
   </table>
 
-{% if page.comments != false and site.disqus_shortname %}
-
-  <section id="disqus_thread"></section>
-  <!-- /#disqus_thread -->
-  {% endif %} {% if page.comments != false %} {% include disqus.html %} {% endif
-  %}
 </article>

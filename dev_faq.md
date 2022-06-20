@@ -3,6 +3,112 @@ layout: post
 title: Developer FAQ
 ---
 
+- [Is there a BIDS App template?](#is-there-a-bids-app-template)
+- [Which container should I use to start building my BIDS App?](#which-container-should-i-use-to-start-building-my-bids-app)
+- [API](#api)
+    - [What should the API of my BIDS App look like?](#what-should-the-api-of-my-bids-app-look-like)
+    - [Can I add more arguments to the API of my App?](#can-i-add-more-arguments-to-the-api-of-my-app)
+    - [What the kinds of analysis levels (`participant` and `group`) mean?](#what-the-kinds-of-analysis-levels-participant-and-group-mean)
+    - [What do we do if our application does not have any use for the group level analysis?](#what-do-we-do-if-our-application-does-not-have-any-use-for-the-group-level-analysis)
+- [Is it mandatory to first check the dataset validity using the BIDS-validator?](#is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator)
+- [How do I upload my BIDS App to the BIDS App Github org?](#how-do-i-upload-my-bids-app-to-the-bids-app-github-org)
+- [Testing Data](#testing-data)
+- [Versioning](#versioning)
+    - [When is a new image deposited to Docker Hub?](#when-is-a-new-image-deposited-to-docker-hub)
+    - [How to tag a new release?](#how-to-tag-a-new-release)
+    - [How should I version my BIDS App?](#how-should-i-version-my-bids-app)
+    - [I want to release a new version of a BIDS App, but the pipeline version is the same?](#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same)
+    - [Where should I describe changes between versions?](#where-should-i-describe-changes-between-versions)
+    - [How can I check a version of a container I have available locally?](#how-can-i-check-a-version-of-a-container-i-have-available-locally)
+    - [How can I download a particular version of a BIDS App?](#how-can-i-download-a-particular-version-of-a-bids-app)
+
+## Is there a BIDS App template?
+
+Have a look at the
+[example BIDS App repository](https://github.com/bids-apps/example). A
+minimalist example of a BIDS App consisting of a Dockerfile and a simple entry
+point script (written in this case in Python) accepting the standard BIDS Apps
+command line arguments.
+
+## Which container should I use to start building my BIDS App?
+
+The only minimum requirements of a BIDS App's container is its ability to run
+your pipeline. So for example, if your App is mostly Python based it should be
+sufficient to start with any image that has Python and include your environment
+dependencies.
+
+## API
+
+### What should the API of my BIDS App look like?
+
+The obligatory arguments of the API of any BIDS App are:
+
+- `bids_dir`
+- `output_dir`
+- `analysis_level`
+
+with an API call that would look like this:
+
+```bash
+app_name bids_dir output_dir analysis_level
+```
+
+### Can I add more arguments to the API of my App?
+
+Every BIDS App must use the mandatory arguments mentioned above, but you are
+free to add more that are specific to the task your App will perform.
+
+We recommend you follow the guidelines mentioned in the
+[BIDS extension proposal 027](https://bids.neuroimaging.io/bep027)
+for more information on specifying the API of your App.
+
+### What the kinds of analysis levels (`participant` and `group`) mean?
+
+Generally, `participant` means individual level analysis (for instance: single
+subject) The group level analysis can be thought of as the second step, where
+the input becomes the output of the `participant` level analysis.
+
+For example, generating statistic maps of each subject's brain could be
+considered `participant`, while generating the average of these maps across the
+dataset could be considered `group`.
+
+### What do we do if our application does not have any use for the group level analysis?
+
+If your pipeline has no need for group level analysis, it is fine if it is only
+valid for the analysis_level argument (see
+[fmriprep](http://fmriprep.readthedocs.io/en/latest/usage.html))
+
+## Is it mandatory to first check the dataset validity using the BIDS-validator?
+
+It is an extremely helpful feature to have validation of the dataset as part of
+your tool. However, it's not considered mandatory. For instance: many Apps will
+simply fail with an error message if the dataset is not BIDS compliant.
+
+## How do I upload my BIDS App to the BIDS App Github org?
+
+You can release BIDS Apps using your own or your lab's account. However, if you
+want to be added to the BIDS docker hub, please message the
+[BIDS maintainers](bids.maintenance+apps@gmail.com) to have a repo created for
+you.
+
+If you base your code on <https://github.com/bids-apps/example> deployment on
+docker hub will happen automatically via Circle-ci.
+
+If you want your App to show on the BIDS App website
+[here](http://bids-apps.neuroimaging.io/apps/)), you will in any case have to
+update the `_config.yml` in the
+[BIDS App website repository](https://github.com/bids-apps/bids-apps.github.io.git).
+
+<!--
+TODO: how do I "submit" an App? Is there a review process? What are the requirements?
+-->
+
+## Testing Data
+
+For both lightweight and full datasets to test your BIDS App, you can choose
+from one of these
+[example datasets](https://bids-standard.github.io/bids-starter-kit/dataset_examples.html)
+
 ## Versioning
 
 ### When is a new image deposited to Docker Hub?
@@ -39,7 +145,7 @@ best option is to use the `-` sign followed by the build number. For example
 After tagging a new release it is important to provide a list of changes on the
 GitHub Releases page. It accepts markdown syntax and allows you to explain in
 detail what has changed. Here's an
-[example](https://github.com/BIDS-Apps/example/releases).
+[example](https://github.com/bids-apps/example/releases).
 
 ### How can I check a version of a container I have available locally?
 
