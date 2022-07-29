@@ -5,7 +5,7 @@ title: What is a BIDS App?
 
 A BIDS App is a container image capturing a neuroimaging pipeline that takes a
 BIDS formatted dataset as input.
-[BIDS (Brain Imaging Data Structure)](http://bids.neuroimaging.io) is an
+[BIDS (Brain Imaging Data Structure)](https://bids.neuroimaging.io) is an
 emerging standard for organizing and describing neuroimaging datasets. Each BIDS
 App has the same core set of command line arguments, making them easy to run and
 integrate into automated platforms. BIDS Apps are constructed in a way that does
@@ -13,11 +13,11 @@ not depend on any software outside of the image other than the container engine.
 
 BIDS Apps rely upon two technologies for container computing:
 
-- [Docker](http://docker.com) for building, hosting as well as running
+- [Docker](https://docker.com) for building, hosting as well as running
   containers on local hardware (running Windows, Mac OS X or Linux) or in the
   cloud.
 
-- [Singularity](http://singularity.lbl.gov/) - for running containers on HPCs.
+- [Singularity](https://singularity.lbl.gov/) - for running containers on HPCs.
 
 BIDS Apps are deposited in the Docker Hub repository, making them openly
 accessible. Each app is versioned and all of the historical versions are

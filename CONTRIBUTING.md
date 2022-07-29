@@ -25,7 +25,7 @@ contribute. :superhero:
 BIDS-Apps are a collection of containerized neuroimaging workflows and pipelines
 that accept datasets organized according to the Brain Imaging Data Structure
 (BIDS). To learn more please visit our
-[Homepage](http://bids-apps.neuroimaging.io)
+[Homepage](https://bids-apps.neuroimaging.io)
 
 These guidelines are designed especially to make the whole process as easy and
 smooth as possible. Still, if something is unclear or not mentioned please don't

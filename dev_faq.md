@@ -76,7 +76,7 @@ dataset could be considered `group`.
 
 If your pipeline has no need for group level analysis, it is fine if it is only
 valid for the analysis_level argument (see
-[fmriprep](http://fmriprep.readthedocs.io/en/latest/usage.html))
+[fmriprep](https://fmriprep.readthedocs.io/en/latest/usage.html))
 
 ## Is it mandatory to first check the dataset validity using the BIDS-validator?
 
@@ -95,7 +95,7 @@ If you base your code on <https://github.com/bids-apps/example> deployment on
 docker hub will happen automatically via Circle-ci.
 
 If you want your App to show on the BIDS App website
-[here](http://bids-apps.neuroimaging.io/apps/)), you will in any case have to
+[here](https://bids-apps.neuroimaging.io/apps/)), you will in any case have to
 update the `_config.yml` in the
 [BIDS App website repository](https://github.com/bids-apps/bids-apps.github.io.git).
 
