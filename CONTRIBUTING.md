@@ -228,6 +228,9 @@ them into the repository.
 
 Success!! :tada: Well done! :bowing_man:
 
+Note that each Pull Request will be accompanied by a preview of the website built by [Netlify](https://www.netlify.com/).
+Just see the status checks at the bottom of your Pull Request in the browser.
+
 ## Recognizing Contributions 🗒️
 
 BIDS follows the
