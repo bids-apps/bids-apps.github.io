@@ -11,7 +11,7 @@ layout: default
     {% for app in site.apps %}
     <tr>
       <td>
-        <a href="http://github.com/{{ app.gh }}">{{ app.gh }}</a>
+        <a href="https://github.com/{{ app.gh }}">{{ app.gh }}</a>
       </td>
       <td>
         <img
@@ -20,7 +20,7 @@ layout: default
       </td>
       <td>
         <a
-          href="http://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug"
+          href="https://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug"
         >
           <img src="https://img.shields.io/github/issues-raw/{{ app.gh }}" />
         </a>
@@ -31,7 +31,7 @@ layout: default
         </a>
       </td>
       <td>
-        <a href="http://github.com/{{ app.gh }}/pulls">
+        <a href="https://github.com/{{ app.gh }}/pulls">
           <img
             src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg"
           />

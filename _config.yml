@@ -14,7 +14,7 @@ exclude:
 # Site settings
 title: BIDS Apps
 description: "portable neuroimaging pipelines that understand BIDS datasets"
-url: "http://bids-apps.neuroimaging.io/"
+url: "https://bids-apps.neuroimaging.io/"
 baseurl: ""
 # google_analytics: 'UA-XXXXXX-X'
 repo_url: "https://github.com/bids-apps/bids-apps.github.io"
