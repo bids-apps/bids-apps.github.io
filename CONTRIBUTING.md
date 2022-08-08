@@ -125,7 +125,7 @@ different types of labels we use.
 
 - ![Duplicate](https://img.shields.io/badge/-duplicate-%237E7E7E) _It indicates
   similar/existing issues or pull requests._ Do check the existing issues and
-  pull request before creating a new one to avoid duplicacy. If you find a
+  pull request before creating a new one to avoid duplication. If you find a
   duplicate issue or PR, please give the reference in the comments.
 
 - ![Enhancement](https://img.shields.io/badge/-enhancement-%232e5783) _It
