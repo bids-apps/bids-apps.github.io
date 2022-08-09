@@ -1,0 +1,47 @@
+name: BIDS app submission
+
+# See the json schema to help you create / update this form
+# https://json.schemastore.org/github-issue-forms.json
+
+description: Add your BIDS app to this website
+
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        - Have you checked our [contributing guide](https://github.com/bids-apps/bids-apps.github.io/blob/master/CONTRIBUTING.md)?
+          It's a helpful resource.
+
+        - Have you checked our [FAQ](https://bids-apps.neuroimaging.io/dev_faq/)?
+
+  - type: textarea
+    attributes:
+      label: Your BIDS app
+      description: |
+        Make sure your provide the github and dockerhub repository of your app !
+
+        For example:
+
+        - gh: "MICA-MNI/micapipe"
+          dh: "micalab/micapipe"
+
+      value: |
+        - gh: "username/repo-name"
+          dh: "username/repo-name"
+
+  - type: checkboxes
+    attributes:
+      label: Submission checklist
+      description: |
+        Make sure that your BIDS app fulfills the following requirements:
+      options:
+        - label: complies to the BIDS app API
+        - label: has a system-test workflow set up on circle-CI
+
+# TODO
+# - add extra fields /requirements for the BIDS app:
+#   - uses raw or derivatives as inputs (or both)
+#   - outputs bids friendly derivatives (filenames follow the entity-label format)
+#   - system test on an openneuro dataset
+#   - has a boutique config

@@ -29,7 +29,7 @@ that accept datasets organized according to the Brain Imaging Data Structure
 
 These guidelines are designed especially to make the whole process as easy and
 smooth as possible. Still, if something is unclear or not mentioned please don't
-hesitate to ask. [Email us](ffein@stanford.edu) or let us know by opening an
+hesitate to ask. [Email us](mailto:bids.maintenance@gmail.com) or let us know by opening an
 [issue!](https://github.com/bids-apps/bids-apps.github.io/issues)
 
 Before you start you'll need to set up a free [GitHub](https://github.com/)
@@ -92,7 +92,7 @@ title: your title goes here
   [issue](https://github.com/bids-apps/bids-apps.github.io/issues)
 - Opening a
   [Pull Request](https://github.com/bids-apps/bids-apps.github.io/pulls)
-- Want to discuss something else: [Email us](ffein@stanford.edu)
+- Want to discuss something else: [Email us](mailto:bids.maintenance@gmail.com)
 
 ## Report a valid issue :heavy_check_mark:
 
@@ -125,7 +125,7 @@ different types of labels we use.
 
 - ![Duplicate](https://img.shields.io/badge/-duplicate-%237E7E7E) _It indicates
   similar/existing issues or pull requests._ Do check the existing issues and
-  pull request before creating a new one to avoid duplicacy. If you find a
+  pull request before creating a new one to avoid duplication. If you find a
   duplicate issue or PR, please give the reference in the comments.
 
 - ![Enhancement](https://img.shields.io/badge/-enhancement-%232e5783) _It
@@ -246,7 +246,7 @@ If you have any questions, comments, or suggestions, please feel free to create
 an issue [here](https://github.com/bids-apps/bids-apps.github.io/issues)! A
 Maintainer or community member will follow up.
 
-If you'd prefer to email then you can contact Franklin at ffein@stanford.edu
+If you'd prefer to email then you can contact us at [bids.maintenance@gmail.com](mailto:bids.maintenance@gmail.com)
 
 ## A Special Note :high_brightness:
 
