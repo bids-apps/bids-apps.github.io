@@ -10,7 +10,7 @@
   <div class="panel-main">
     <div class="panel-main__inner panel-inverted">
       <div class="panel-main__content">
-        <img src="{{ site.baseurl }}/images/BIDS_apps_logo_black.jpg" class="user-image" alt="My Profile Photo" />
+        <img src="{{ site.baseurl }}/images/BIDS_apps_logo_black.jpg" class="user-image" alt="BIDS Apps logo" />
         <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
         <hr class="panel-cover__divider" />
         <p class="panel-cover__description">{{ site.description }}</p>
@@ -46,20 +46,6 @@
                 >
                   <i class="icon icon-social-twitter"></i>
                   <span class="label">Twitter</span>
-                </a>
-              </li>
-              {% endif %}
-
-              <!-- Facebook -->
-              {% if site.author.facebook_username %}
-              <li class="navigation__item">
-                <a
-                  href="https://fb.me/{{ site.author.facebook_username }}"
-                  title="{{ site.author.facebook_username }} on Facebook"
-                  target="_blank"
-                >
-                  <i class="icon icon-social-facebook"></i>
-                  <span class="label">Facebook</span>
                 </a>
               </li>
               {% endif %}
