@@ -16,7 +16,7 @@ title: BIDS Apps
 description: "portable neuroimaging pipelines that understand BIDS datasets"
 url: "https://bids-apps.neuroimaging.io/"
 baseurl: ""
-# google_analytics: 'UA-XXXXXX-X'
+# google_analytics: "UA-XXXXXX-X"
 repo_url: "https://github.com/bids-apps/bids-apps.github.io"
 
 author:
@@ -145,8 +145,11 @@ apps:
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
-  - gh: 'khanlab/funcmasker-flex'
-    dh: 'khanlab/funcmasker-flex'
+  - gh: "khanlab/funcmasker-flex"
+    dh: "khanlab/funcmasker-flex"
+    ci: "gh"
+    branch: "main"
+    workflow: "test"
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
@@ -174,6 +177,8 @@ apps:
 
   - gh: "PeerHerholz/BIDSonym"
     dh: "peerherholz/bidsonym"
+    ci: "travis"
+    branch: "master"
 
   - gh: "PennLINC/qsiprep"
     dh: "pennbbl/qsiprep"
@@ -189,3 +194,4 @@ apps:
 
   - gh: "trendscenter/gift-bids"
     dh: "trends/gift-bids"
+    ci: "none"
