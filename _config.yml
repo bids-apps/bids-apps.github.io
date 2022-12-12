@@ -62,91 +62,205 @@ navigation:
     name: "Developer FAQ"
 
 apps:
+
+# template for adding an app
+  # - gh: "github_usename/repo_name"
+  #   dh: "dockerhub_usename/repo_name"
+  #   ds_type:
+  #     - raw
+  #     - derivative
+  #   datatype:
+  #     - anat
+  #     - func
+  #     - dwi
+  #     - fmap
+  #     - eeg
+
   # apps that are part of the bids apps github organization
   # sorted alphabetically by app name
   - gh: "bids-apps/aa"
     dh: "bids/aa"
+    ds_type:
+      - raw
+      - derivative
 
   - gh: "bids-apps/afni_proc"
     dh: "bids/afni_proc"
+    ds_type:
+      - raw
+    datatype:
+      - func
 
   - gh: "bids-apps/antsCorticalThickness"
     dh: "bids/antscorticalthickness"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "bids-apps/baracus"
     dh: "bids/baracus"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "bids-apps/brainiak-srm"
     dh: "bids/brainiak-srm"
+    ds_type:
+      - derivative
+    datatype:
+      - func
 
   - gh: "bids-apps/BROCCOLI"
     dh: "bids/broccoli"
 
   - gh: "bids-apps/CPAC"
     dh: "bids/cpac"
+    ds_type:
+      - raw
+    datatype:
+      - func
 
   - gh: "bids-apps/DPARSF"
     dh: "bids/dparsf"
+    ds_type:
+      - raw     # ??
+    datatype:
+      - func
 
   - gh: "bids-apps/example"
     dh: "bids/example"
 
   - gh: "bids-apps/FibreDensityAndCrosssection"
     dh: "bids/fibredensityandcrosssection"
+    ds_type:
+      - raw
+    datatype:
+      - dmri
 
   - gh: "bids-apps/freesurfer"
     dh: "bids/freesurfer"
+    ds_type:
+      - raw
+    datatype:
+      - func
 
   - gh: "bids-apps/HCPPipelines"
     dh: "bids/hcppipelines"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
+      - dwi
 
   - gh: "bids-apps/hyperalignment"
     dh: "bids/hyperalignment"
+    ds_type:
+      - derivative
+    datatype:
+      - func
 
   - gh: "bids-apps/MAGeTbrain"
     dh: "bids/magetbrain"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "bids-apps/mindboggle"
     dh: "bids/mindboggle"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "bids-apps/MRtrix3_connectome"
     dh: "bids/mrtrix3_connectome"
+    ds_type:
+      - raw
+      - derivative
+    datatype:
+      - dwi
 
   - gh: "bids-apps/ndmg"
     dh: "bids/ndmg"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - dwi
 
   - gh: "bids-apps/niak"
     dh: "bids/niak"
 
   - gh: "bids-apps/nipypelines"
     dh: "bids/nipypelines"
+    ds_type:
+      - raw
+    datatype:
+      - func
 
   - gh: "bids-apps/oppni"
     dh: "bids/oppni"
+    ds_type:
+      - raw
+    datatype:
+      - func
 
   - gh: "bids-apps/PyMVPA"
     dh: "bids/pymvpa"
+    ds_type:
+      - derivative
+    datatype:
+      - func
 
   - gh: "bids-apps/QAP"
     dh: "bids/qap"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "bids-apps/rs_signal_extract"
     dh: "bids/rs_signal_extract"
+    ds_type:
+      - derivative
+    datatype:
+      - func
 
   - gh: "bids-apps/rsHRF"
     dh: "bids/rshrf"
+    ds_type:
+      - derivative
+    datatype:
+      - func
 
   - gh: "bids-apps/SPM"
     dh: "bids/spm"
+    ds_type:
+      - raw
+      - derivative
 
   - gh: "bids-apps/tracula"
     dh: "bids/tracula"
+    datatype:
+      - dwi
 
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
   - gh: 'khanlab/funcmasker-flex'
     dh: 'khanlab/funcmasker-flex'
+    ds_type:
+      - raw
+    datatype:
+      - func
+
+  - gh: "trendscenter/gift-bids"
+    dh: "trends/gift-bids"
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
@@ -156,36 +270,78 @@ apps:
 
   - gh: "nipreps/fmriprep"
     dh: "nipreps/fmriprep"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "nipreps/dmriprep"
     dh: "nipreps/dmriprep"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - dwi
 
   - gh: "nipreps/mriqc"
     dh: "nipreps/mriqc"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "nipreps/nibabies"
     dh: "nipreps/nibabies"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "nipreps/nirodents"
     dh: "nipreps/nirodents"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "nipreps/smriprep"
     dh: "nipreps/smriprep"
+    ds_type:
+      - raw
 
   - gh: "PeerHerholz/BIDSonym"
     dh: "peerherholz/bidsonym"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "PennLINC/qsiprep"
     dh: "pennbbl/qsiprep"
+    ds_type:
+      - raw
 
   - gh: "connectomicslab/connectomemapper3"
     dh: "sebastientourbier/connectomemapper-bidsapp"
+    ds_type:
+      - raw
+      - derivative
+    datatype:
+      - anat
+      - func
+      - dwi
+      - eeg
 
   - gh: "sebastientourbier/multiscalebrainparcellator"
     dh: "sebastientourbier/multiscalebrainparcellator"
+    ds_type:
+      - raw
+    datatype:
+      - anat
 
   - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
     dh: "sebastientourbier/mialsuperresolutiontoolkit"
-
-  - gh: "trendscenter/gift-bids"
-    dh: "trends/gift-bids"
