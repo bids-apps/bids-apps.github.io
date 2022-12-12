@@ -256,6 +256,8 @@ apps:
 
   - gh: "bids-apps/tracula"
     dh: "bids/tracula"
+    ds_type:
+      - raw
     datatype:
       - dwi
 
