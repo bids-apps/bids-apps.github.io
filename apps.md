@@ -61,6 +61,10 @@ layout: default
             />
           </a>
         </td>
+        <td>
+            <img  alt="GitHub last commit"
+                  src="https://img.shields.io/github/last-commit/{{ app.gh }}?style=plastic">
+        </td>
       </tr>
     {% endfor %}
   </table>
