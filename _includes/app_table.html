@@ -1,4 +1,14 @@
-<h3 id="{{ include.ds_type }}-{{ include.datatype }}">For BIDS {{ include.ds_type }} datasets: {{ include.datatype }} data</h3>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<h3>
+    <a href="{{ page.url }}#{{ include.ds_type }}-{{ include.datatype }}">
+        <i class="fa fa-anchor"
+           style="font-size:8px"
+           id="{{ include.ds_type }}-{{ include.datatype }}"></i>
+    </a>
+    For BIDS {{ include.ds_type }} datasets: {{ include.datatype }} data
+</h3>
+
 
 <table>
     {% for app in include.apps %}
