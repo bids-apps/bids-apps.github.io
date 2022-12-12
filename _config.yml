@@ -262,8 +262,8 @@ apps:
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
-  - gh: 'khanlab/funcmasker-flex'
-    dh: 'khanlab/funcmasker-flex'
+  - gh: "khanlab/funcmasker-flex"
+    dh: "khanlab/funcmasker-flex"
     ci: "gh"
     branch: "main"
     workflow: "test"
