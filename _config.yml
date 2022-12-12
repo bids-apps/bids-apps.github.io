@@ -16,7 +16,7 @@ title: BIDS Apps
 description: "portable neuroimaging pipelines that understand BIDS datasets"
 url: "https://bids-apps.neuroimaging.io/"
 baseurl: ""
-# google_analytics: 'UA-XXXXXX-X'
+# google_analytics: "UA-XXXXXX-X"
 repo_url: "https://github.com/bids-apps/bids-apps.github.io"
 
 author:
@@ -78,6 +78,20 @@ apps:
 
   # apps that are part of the bids apps github organization
   # sorted alphabetically by app name
+
+  # template
+  # - gh: "github_usename/github_repo_name"
+  #   dh: "dockerhub_usename/dockerhub_repo_name"
+  #   ci: Continuous integration service.
+  #       Defaults to "circleci"
+  #       Can be any of:
+  #         - "gh"
+  #         - "travis"
+  #         - "circleci"
+  #         - "none"
+  #   branch: Default branch of the repo. Defaults to "master"
+  #   workflow: Name of the test workflow.
+
   - gh: "bids-apps/aa"
     dh: "bids/aa"
     ds_type:
@@ -254,6 +268,9 @@ apps:
 
   - gh: 'khanlab/funcmasker-flex'
     dh: 'khanlab/funcmasker-flex'
+    ci: "gh"
+    branch: "main"
+    workflow: "test"
     ds_type:
       - raw
     datatype:
@@ -261,6 +278,7 @@ apps:
 
   - gh: "trendscenter/gift-bids"
     dh: "trends/gift-bids"
+    ci: "none"
 
   - gh: "khanlab/hippunfold"
     dh: "khanlab/hippunfold"
@@ -315,6 +333,8 @@ apps:
 
   - gh: "PeerHerholz/BIDSonym"
     dh: "peerherholz/bidsonym"
+    ci: "travis"
+    branch: "master"
     ds_type:
       - raw
     datatype:
