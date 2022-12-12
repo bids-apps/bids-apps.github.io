@@ -64,8 +64,8 @@ navigation:
 apps:
 
 # template for adding an app
-  # - gh: "github_usename/repo_name"
-  #   dh: "dockerhub_usename/repo_name"
+  # - gh: "github_usename/github_repo_name"
+  #   dh: "dockerhub_usename/dockerhub_repo_name"
   #   ds_type:
   #     - raw
   #     - derivative
@@ -75,13 +75,6 @@ apps:
   #     - dwi
   #     - fmap
   #     - eeg
-
-  # apps that are part of the bids apps github organization
-  # sorted alphabetically by app name
-
-  # template
-  # - gh: "github_usename/github_repo_name"
-  #   dh: "dockerhub_usename/dockerhub_repo_name"
   #   ci: Continuous integration service.
   #       Defaults to "circleci"
   #       Can be any of:
@@ -91,6 +84,9 @@ apps:
   #         - "none"
   #   branch: Default branch of the repo. Defaults to "master"
   #   workflow: Name of the test workflow.
+
+  # apps that are part of the bids apps github organization
+  # sorted alphabetically by app name
 
   - gh: "bids-apps/aa"
     dh: "bids/aa"
