@@ -272,6 +272,18 @@ apps:
     ds_type:
       - raw
     datatype:
+      - func    
+
+  - gh: "cpp-lln-lab/bidspm"
+    dh: "cpplab/bidspm"
+    ci: "gh"
+    branch: "main"
+    workflow: "tests"
+    ds_type:
+      - raw
+      - derivative
+    datatype:
+      - anat
       - func
 
   - gh: "khanlab/funcmasker-flex"
