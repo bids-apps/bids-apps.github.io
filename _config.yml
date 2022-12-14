@@ -268,7 +268,7 @@ apps:
     dh: "cpplab/bidsmreye"
     ci: "gh"
     branch: "main"
-    workflow: "test"
+    workflow: "test_demo"
     ds_type:
       - raw
     datatype:
