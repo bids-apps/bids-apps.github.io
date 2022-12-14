@@ -268,7 +268,7 @@ apps:
     dh: "cpplab/bidspm"
     ci: "gh"
     branch: "main"
-    workflow: "test"
+    workflow: "tests"
     ds_type:
       - raw
       - derivative
