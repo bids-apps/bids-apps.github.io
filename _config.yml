@@ -264,6 +264,18 @@ apps:
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
+  - gh: "cpp-lln-lab/bidspm"
+    dh: "cpplab/bidspm"
+    ci: "gh"
+    branch: "main"
+    workflow: "test"
+    ds_type:
+      - raw
+      - derivative
+    datatype:
+      - anat
+      - func
+
   - gh: "khanlab/funcmasker-flex"
     dh: "khanlab/funcmasker-flex"
     ci: "gh"
