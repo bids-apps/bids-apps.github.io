@@ -270,9 +270,9 @@ apps:
     branch: "main"
     workflow: "test_demo"
     ds_type:
-      - raw
+      - derivative
     datatype:
-      - func    
+      - func
 
   - gh: "cpp-lln-lab/bidspm"
     dh: "cpplab/bidspm"
