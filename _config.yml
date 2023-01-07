@@ -338,6 +338,7 @@ apps:
   - gh: "MICA-MNI/micapipe"
     status: active
     dh: "micalab/micapipe"
+    ci: "none"
 
   - gh: "nipreps/fmriprep"
     status: active
