@@ -1,25 +1,15 @@
-{% assign app = include.app %}
-{% assign branch = include.branch %}
+{% assign app = include.app %} {% assign branch = include.branch %} {% assign
+tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
+
 <tr>
   <td>
-    <a href="https://github.com/{{ app.gh }}">{{ app.gh }}</a>
+    <a href="https://github.com/{{ app.gh }}">{{ app_name }}</a>
   </td>
   <td>
     <img
       alt="version tag"
       src="https://img.shields.io/github/v/tag/{{ app.gh | downcase }}?label=version"
     />
-  </td>
-
-  <td>
-    <a
-      href="https://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug"
-    >
-      <img
-        alt="Number of open issues on github"
-        src="https://img.shields.io/github/issues-raw/{{ app.gh }}"
-      />
-    </a>
   </td>
 
   <td>
@@ -47,6 +37,24 @@
   </td>
 
   <td>
+    <img
+      alt="GitHub last commit"
+      src="https://img.shields.io/github/last-commit/{{ app.gh }}?style=plastic"
+    />
+  </td>
+
+  <td>
+    <a
+      href="https://github.com/{{ app.gh }}/issues?q=is%3Aopen+is%3Aissue+label%3Abug"
+    >
+      <img
+        alt="Number of open issues on github"
+        src="https://img.shields.io/github/issues-raw/{{ app.gh }}"
+      />
+    </a>
+  </td>
+
+  <td>
     <a href="https://github.com/{{ app.gh }}/pulls">
       <img
         alt="Number of pull requests on github"
@@ -62,13 +70,6 @@
         src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg"
       />
     </a>
-  </td>
-
-  <td>
-    <img
-      alt="GitHub last commit"
-      src="https://img.shields.io/github/last-commit/{{ app.gh }}?style=plastic"
-    />
   </td>
 
   <td>
