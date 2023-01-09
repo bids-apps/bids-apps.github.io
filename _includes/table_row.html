@@ -55,15 +55,6 @@ tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
   </td>
 
   <td>
-    <a href="https://github.com/{{ app.gh }}/pulls">
-      <img
-        alt="Number of pull requests on github"
-        src="https://img.shields.io/github/issues-pr-raw/{{ app.gh }}/bug.svg"
-      />
-    </a>
-  </td>
-
-  <td>
     <a href="https://hub.docker.com/r/{{ app.dh | downcase }}/">
       <img
         alt="Number of Docker Pulls"
