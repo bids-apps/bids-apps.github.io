@@ -371,7 +371,7 @@ apps:
     ds_type:
       - func
     datatype:
-      - derivative      
+      - derivative
 
   - gh: "connectomicslab/connectomemapper3"
     dh: "sebastientourbier/connectomemapper-bidsapp"
