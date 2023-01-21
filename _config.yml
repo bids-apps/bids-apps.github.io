@@ -407,6 +407,14 @@ apps:
     ds_type:
       - raw
 
+  - gh: "poldracklab/fitlins"
+    dh: "poldracklab/fitlins"
+    branch: "dev"
+    ds_type:
+      - derivative
+    datatype:
+      - func
+
   - gh: "connectomicslab/connectomemapper3"
     status: active
     dh: "sebastientourbier/connectomemapper-bidsapp"
