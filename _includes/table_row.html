@@ -58,7 +58,7 @@ tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
     <a href="https://hub.docker.com/r/{{ app.dh | downcase }}/">
       <img
         alt="Number of Docker Pulls"
-        src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}.svg"
+        src="https://img.shields.io/docker/pulls/{{ app.dh | downcase }}"
       />
     </a>
   </td>
