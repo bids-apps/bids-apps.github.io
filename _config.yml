@@ -62,8 +62,7 @@ navigation:
     name: "Developer FAQ"
 
 apps:
-
-# template for adding an app
+  # template for adding an app
   # - gh: "github_usename/github_repo_name"
   #   dh: "dockerhub_usename/dockerhub_repo_name"
   #   status: unmaintained
@@ -128,6 +127,15 @@ apps:
     datatype:
       - func
 
+  - gh: "bids-apps/BrainSuite"
+    status: active
+    dh: "bids/brainsuite"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - dwi
+
   - gh: "bids-apps/BROCCOLI"
     status: active
     dh: "bids/broccoli"
@@ -144,7 +152,7 @@ apps:
     status: active
     dh: "bids/dparsf"
     ds_type:
-      - raw     # ??
+      - raw # ??
     datatype:
       - func
 
