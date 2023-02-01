@@ -62,8 +62,7 @@ navigation:
     name: "Developer FAQ"
 
 apps:
-
-# template for adding an app
+  # template for adding an app
   # - gh: "github_usename/github_repo_name"
   #   dh: "dockerhub_usename/dockerhub_repo_name"
   #   status: unmaintained
@@ -144,7 +143,7 @@ apps:
     status: active
     dh: "bids/dparsf"
     ds_type:
-      - raw     # ??
+      - raw # ??
     datatype:
       - func
 
@@ -221,7 +220,7 @@ apps:
       - dwi
 
   - gh: "bids-apps/niak"
-    status: active
+    status: unmaintained
     dh: "bids/niak"
 
   - gh: "bids-apps/nipypelines"
