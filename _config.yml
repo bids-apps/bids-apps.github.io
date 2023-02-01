@@ -229,7 +229,7 @@ apps:
       - dwi
 
   - gh: "bids-apps/niak"
-    status: active
+    status: unmaintained
     dh: "bids/niak"
 
   - gh: "bids-apps/nipypelines"
