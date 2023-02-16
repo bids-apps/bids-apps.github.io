@@ -135,6 +135,7 @@ apps:
     datatype:
       - anat
       - dwi
+      - func
 
   - gh: "bids-apps/BROCCOLI"
     status: active
