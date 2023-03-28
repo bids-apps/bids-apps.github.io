@@ -324,6 +324,16 @@ apps:
       - anat
       - func
 
+  - gh: "djarecka/fmriprep-fake"
+    status: active
+    dh: "djarecka/fmriprep_fake"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
+    ci: "none"
+
   - gh: "khanlab/funcmasker-flex"
     status: active
     dh: "khanlab/funcmasker-flex"
@@ -447,12 +457,3 @@ apps:
   - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
     status: active
     dh: "sebastientourbier/mialsuperresolutiontoolkit"
-
-  - gh: "djarecka/fmriprep-fake"
-    status: active
-    dh: "djarecka/fmriprep_fake"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
