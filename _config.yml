@@ -344,6 +344,15 @@ apps:
       - raw
     datatype:
       - func
+  
+  - gh: "PennLINC/babs_tests"  # under "try_BIDS_Apps/"
+    status: active
+    dh: "pennlinc/toy_bids_app"
+    ds_type:
+      - raw
+    datatype:
+      - anat
+      - func
 
   - gh: "trendscenter/gift-bids"
     status: active
