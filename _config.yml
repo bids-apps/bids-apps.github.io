@@ -345,14 +345,16 @@ apps:
     datatype:
       - func
 
-  - gh: "PennLINC/babs_tests"  # under "try_BIDS_Apps/"
+  - gh: "PennLINC/babs_tests"  # see "docker/README.md"
     status: active
     dh: "pennlinc/toy_bids_app"
     ds_type:
       - raw
+      - derivative
     datatype:
       - anat
       - func
+      - dwi
 
   - gh: "trendscenter/gift-bids"
     status: active
