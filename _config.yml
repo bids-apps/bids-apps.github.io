@@ -355,6 +355,7 @@ apps:
       - anat
       - func
       - dwi
+    ci: "none"
 
   - gh: "trendscenter/gift-bids"
     status: active
