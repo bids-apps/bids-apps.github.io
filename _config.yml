@@ -439,6 +439,7 @@ apps:
       - raw
 
   - gh: "poldracklab/fitlins"
+    status: active
     dh: "poldracklab/fitlins"
     branch: "dev"
     ds_type:
