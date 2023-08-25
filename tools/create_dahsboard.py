@@ -14,6 +14,7 @@ name = []
 status = []
 ci = []
 last_commit = []
+version = []
 
 for app in data["apps"]:
     name.append(f"[{app['gh']}](https://github.com/{app['gh']})")
@@ -48,8 +49,12 @@ for app in data["apps"]:
         f"![GitHub last commit](https://img.shields.io/github/last-commit/{app['gh']})"
     )
 
+    version.append(
+        f"![version tag](https://img.shields.io/github/v/tag/{ app['gh'].lower() }?label=version)"
+    )
+
 df = pd.DataFrame(
-    {"name": name, "status": status, "ci": ci, "last commit": last_commit}
+    {"name": name, "status": status, "ci": ci, "last commit": last_commit, "version": version}
 )
 
 # append to readme
@@ -62,3 +67,4 @@ with open(root_dir / "README.md", "w") as f:
         if line.startswith("<!-- INSERT DASHBOARD HERE -->"):
             f.write("\n\n")
             df.to_markdown(f, index=False)
+            break

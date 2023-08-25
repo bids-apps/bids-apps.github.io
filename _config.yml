@@ -140,6 +140,7 @@ apps:
   - gh: "bids-apps/BROCCOLI"
     status: active
     dh: "bids/broccoli"
+    comment: "missing test data: https://github.com/bids-apps/BROCCOLI/issues/13"
 
   - gh: "bids-apps/CPAC"
     status: active
@@ -281,6 +282,7 @@ apps:
       - derivative
     datatype:
       - func
+    comment: does not run on typical fmriprep data
 
   - gh: "bids-apps/SPM"
     status: active

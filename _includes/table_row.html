@@ -5,12 +5,6 @@ tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
   <td>
     <a href="https://github.com/{{ app.gh }}">{{ app_name }}</a>
   </td>
-  <td>
-    <img
-      alt="version tag"
-      src="https://img.shields.io/github/v/tag/{{ app.gh | downcase }}?label=version"
-    />
-  </td>
 
   <td>
     {% if app.ci == "travis" %}
