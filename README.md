@@ -15,7 +15,7 @@ See out [CONTRIBUTING guidelines](./CONTRIBUTING.md) to see how you can help.
   - the [Google group](https://groups.google.com/forum/#!forum/bids-discussion), for broader discussions surrounding BIDS
   - the [specification repository issue page](https://github.com/bids-standard/bids-specification/issues), if you found inconsistencies, typos, or other issues with the BIDS specification itself
 
-## Dashbaord
+## Dashboard
 
 Status of the default branch of each app.
 
