@@ -66,6 +66,7 @@ apps:
   # template for adding an app
   # - gh: "github_usename/github_repo_name"
   #   dh: "dockerhub_usename/dockerhub_repo_name"
+  #   description: "short description of the app"
   #   status: unmaintained
   #   ds_type:
   #     - raw
