@@ -105,7 +105,7 @@ apps:
     -   raw
     datatype:
     -   func
-    description: prototype AFNI bids app implmenting participant level preprocessing with afni_proc.py
+    description: prototype AFNI bids app implementing participant level preprocessing with afni_proc.py
 
 -   gh: bids-apps/antsCorticalThickness
     status: active
