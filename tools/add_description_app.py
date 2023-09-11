@@ -9,18 +9,21 @@ root_dir = Path(__file__).parent.parent
 
 data = yaml.load(root_dir / "_config.yml")
 
-# with open("token.txt") as f:
-#     token = f.read().strip()
+with open("/home/remi/Documents/tokens/gh_user.txt") as f:
+    token = f.read().strip()
 
-# auth=("Remi-Gau", token)
+auth=("Remi-Gau", token)
 
-# api_call = f"  https://api.github.com/repos/bids-apps/{}"
-# r = requests.get(api_call)
-# r.json()
+for idx, app in enumerate(data["apps"]):
 
-for app in data["apps"]:
+    api_call = f"https://api.github.com/repos/{app['gh']}"
+    r = requests.get(api_call, auth=auth)
+    content = r.json()
+    print(content["description"])
+    app["description"] = content["description"]
 
-    print(app)
+    data["apps"][idx] = app
+
 
 # rewrite config file
 with open(root_dir / "_config.yml", "w") as f:
