@@ -1,36 +1,36 @@
 exclude:
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - any_additional_item
-  - README.md
-  - CONTRIBUTING.md
-  - LICENSE
+- Gemfile
+- Gemfile.lock
+- node_modules
+- vendor/bundle/
+- vendor/cache/
+- vendor/gems/
+- vendor/ruby/
+- any_additional_item
+- README.md
+- CONTRIBUTING.md
+- LICENSE
 
 # Site settings
 title: BIDS Apps
-description: "portable neuroimaging pipelines that understand BIDS datasets"
-url: "https://bids-apps.neuroimaging.io/"
-baseurl: ""
+description: portable neuroimaging pipelines that understand BIDS datasets
+url: https://bids-apps.neuroimaging.io/
+baseurl: ''
 # google_analytics: "UA-XXXXXX-X"
-repo_url: "https://github.com/bids-apps/bids-apps.github.io"
+repo_url: https://github.com/bids-apps/bids-apps.github.io
 
 author:
-  name: "BIDS Apps contributors"
+  name: BIDS Apps contributors
   twitter_username: bidsstandard
   email: bids.maintenance+apps@gmail.com
   github_username: bids-standard
 
 defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
 
 # Build settings
 destination: _site
@@ -46,20 +46,20 @@ kramdown:
   hard_wrap: false
 
 plugins:
-  - jekyll-paginate
+- jekyll-paginate
 
 # Defines buttons and links to the pages that will be displayed in the nav bar
 # see _includes/header.html
 # If the markdown document in the root of the repo is foo.md, then "src" must be "foo"
 navigation:
-  - src: "apps"
-    name: "Apps"
-  - src: "about"
-    name: "About"
-  - src: "tutorial"
-    name: "Tutorials"
-  - src: "dev_faq"
-    name: "Developer FAQ"
+- src: apps
+  name: Apps
+- src: about
+  name: About
+- src: tutorial
+  name: Tutorials
+- src: dev_faq
+  name: Developer FAQ
 
 apps:
   # template for adding an app
@@ -88,387 +88,387 @@ apps:
   # apps that are part of the bids apps github organization
   # sorted alphabetically by app name
 
-  - gh: "bids-apps/aa"
-    status: active
-    dh: "bids/aa"
-    ds_type:
-      - raw
-      - derivative
+- gh: bids-apps/aa
+  status: active
+  dh: bids/aa
+  ds_type:
+  - raw
+  - derivative
 
-  - gh: "bids-apps/afni_proc"
-    status: active
-    dh: "bids/afni_proc"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: bids-apps/afni_proc
+  status: active
+  dh: bids/afni_proc
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "bids-apps/antsCorticalThickness"
-    status: active
-    dh: "bids/antscorticalthickness"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: bids-apps/antsCorticalThickness
+  status: active
+  dh: bids/antscorticalthickness
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "bids-apps/baracus"
-    status: active
-    dh: "bids/baracus"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: bids-apps/baracus
+  status: active
+  dh: bids/baracus
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "bids-apps/brainiak-srm"
-    status: active
-    dh: "bids/brainiak-srm"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: bids-apps/brainiak-srm
+  status: active
+  dh: bids/brainiak-srm
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "bids-apps/BrainSuite"
-    status: active
-    dh: "bids/brainsuite"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - dwi
-      - func
+- gh: bids-apps/BrainSuite
+  status: active
+  dh: bids/brainsuite
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - dwi
+  - func
 
-  - gh: "bids-apps/BROCCOLI"
-    status: active
-    dh: "bids/broccoli"
-    comment: "missing test data: https://github.com/bids-apps/BROCCOLI/issues/13"
+- gh: bids-apps/BROCCOLI
+  status: active
+  dh: bids/broccoli
+  comment: 'missing test data: https://github.com/bids-apps/BROCCOLI/issues/13'
 
-  - gh: "bids-apps/CPAC"
-    status: active
-    dh: "bids/cpac"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: bids-apps/CPAC
+  status: active
+  dh: bids/cpac
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "bids-apps/DPARSF"
-    status: active
-    dh: "bids/dparsf"
-    ds_type:
-      - raw # ??
-    datatype:
-      - func
+- gh: bids-apps/DPARSF
+  status: active
+  dh: bids/dparsf
+  ds_type:
+  - raw     # ??
+  datatype:
+  - func
 
-  - gh: "bids-apps/example"
-    status: active
-    dh: "bids/example"
+- gh: bids-apps/example
+  status: active
+  dh: bids/example
 
-  - gh: "bids-apps/FibreDensityAndCrosssection"
-    status: unmaintained
-    dh: "bids/fibredensityandcrosssection"
-    ds_type:
-      - mri
-    datatype:
-      - dmri
+- gh: bids-apps/FibreDensityAndCrosssection
+  status: unmaintained
+  dh: bids/fibredensityandcrosssection
+  ds_type:
+  - mri
+  datatype:
+  - dmri
 
-  - gh: "bids-apps/freesurfer"
-    status: active
-    dh: "bids/freesurfer"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: bids-apps/freesurfer
+  status: active
+  dh: bids/freesurfer
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "bids-apps/HCPPipelines"
-    status: active
-    dh: "bids/hcppipelines"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
-      - dwi
+- gh: bids-apps/HCPPipelines
+  status: active
+  dh: bids/hcppipelines
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
+  - dwi
 
-  - gh: "bids-apps/hyperalignment"
-    status: active
-    dh: "bids/hyperalignment"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: bids-apps/hyperalignment
+  status: active
+  dh: bids/hyperalignment
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "bids-apps/MAGeTbrain"
-    status: active
-    dh: "bids/magetbrain"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: bids-apps/MAGeTbrain
+  status: active
+  dh: bids/magetbrain
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "bids-apps/mindboggle"
-    status: active
-    dh: "bids/mindboggle"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: bids-apps/mindboggle
+  status: active
+  dh: bids/mindboggle
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "bids-apps/MRtrix3_connectome"
-    status: active
-    dh: "bids/mrtrix3_connectome"
-    ds_type:
-      - raw
-      - derivative
-    datatype:
-      - dwi
+- gh: bids-apps/MRtrix3_connectome
+  status: active
+  dh: bids/mrtrix3_connectome
+  ds_type:
+  - raw
+  - derivative
+  datatype:
+  - dwi
 
-  - gh: "bids-apps/ndmg"
-    status: active
-    dh: "bids/ndmg"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - dwi
+- gh: bids-apps/ndmg
+  status: active
+  dh: bids/ndmg
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - dwi
 
-  - gh: "bids-apps/niak"
-    status: unmaintained
-    dh: "bids/niak"
+- gh: bids-apps/niak
+  status: unmaintained
+  dh: bids/niak
 
-  - gh: "bids-apps/nipypelines"
-    status: active
-    dh: "bids/nipypelines"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: bids-apps/nipypelines
+  status: active
+  dh: bids/nipypelines
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "bids-apps/oppni"
-    status: active
-    dh: "bids/oppni"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: bids-apps/oppni
+  status: active
+  dh: bids/oppni
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "bids-apps/PyMVPA"
-    status: active
-    dh: "bids/pymvpa"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: bids-apps/PyMVPA
+  status: active
+  dh: bids/pymvpa
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "bids-apps/QAP"
-    status: active
-    dh: "bids/qap"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
+- gh: bids-apps/QAP
+  status: active
+  dh: bids/qap
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
 
-  - gh: "bids-apps/rs_signal_extract"
-    status: active
-    dh: "bids/rs_signal_extract"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: bids-apps/rs_signal_extract
+  status: active
+  dh: bids/rs_signal_extract
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "bids-apps/rsHRF"
-    status: active
-    dh: "bids/rshrf"
-    ds_type:
-      - derivative
-    datatype:
-      - func
-    comment: does not run on typical fmriprep data
+- gh: bids-apps/rsHRF
+  status: active
+  dh: bids/rshrf
+  ds_type:
+  - derivative
+  datatype:
+  - func
+  comment: does not run on typical fmriprep data
 
-  - gh: "bids-apps/SPM"
-    status: active
-    dh: "bids/spm"
-    ds_type:
-      - raw
-      - derivative
+- gh: bids-apps/SPM
+  status: active
+  dh: bids/spm
+  ds_type:
+  - raw
+  - derivative
 
-  - gh: "bids-apps/tracula"
-    status: active
-    dh: "bids/tracula"
-    ds_type:
-      - raw
-    datatype:
-      - dwi
+- gh: bids-apps/tracula
+  status: active
+  dh: bids/tracula
+  ds_type:
+  - raw
+  datatype:
+  - dwi
 
   # apps hosted somewhere else
   # sorted alphabetically by DockerHub (dh)
 
-  - gh: "cpp-lln-lab/bidsMReye"
-    status: active
-    dh: "cpplab/bidsmreye"
-    ci: "gh"
-    branch: "main"
-    workflow: "system_tests"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: cpp-lln-lab/bidsMReye
+  status: active
+  dh: cpplab/bidsmreye
+  ci: gh
+  branch: main
+  workflow: system_tests
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "cpp-lln-lab/bidspm"
-    status: active
-    dh: "cpplab/bidspm"
-    ci: "gh"
-    branch: "main"
-    workflow: "tests"
-    ds_type:
-      - raw
-      - derivative
-    datatype:
-      - anat
-      - func
+- gh: cpp-lln-lab/bidspm
+  status: active
+  dh: cpplab/bidspm
+  ci: gh
+  branch: main
+  workflow: tests
+  ds_type:
+  - raw
+  - derivative
+  datatype:
+  - anat
+  - func
 
-  - gh: "djarecka/fmriprep-fake"
-    status: active
-    dh: "djarecka/fmriprep_fake"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
-    ci: "none"
+- gh: djarecka/fmriprep-fake
+  status: active
+  dh: djarecka/fmriprep_fake
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
+  ci: none
 
-  - gh: "khanlab/funcmasker-flex"
-    status: active
-    dh: "khanlab/funcmasker-flex"
-    ci: "gh"
-    branch: "main"
-    workflow: "test"
-    ds_type:
-      - raw
-    datatype:
-      - func
+- gh: khanlab/funcmasker-flex
+  status: active
+  dh: khanlab/funcmasker-flex
+  ci: gh
+  branch: main
+  workflow: test
+  ds_type:
+  - raw
+  datatype:
+  - func
 
-  - gh: "PennLINC/babs_tests"  # see "docker/README.md"
-    status: active
-    dh: "pennlinc/toy_bids_app"
-    ds_type:
-      - raw
-      - derivative
-    datatype:
-      - anat
-      - func
-      - dwi
-    ci: "none"
+- gh: PennLINC/babs_tests      # see "docker/README.md"
+  status: active
+  dh: pennlinc/toy_bids_app
+  ds_type:
+  - raw
+  - derivative
+  datatype:
+  - anat
+  - func
+  - dwi
+  ci: none
 
-  - gh: "trendscenter/gift-bids"
-    status: active
-    dh: "trends/gift-bids"
-    ci: "none"
+- gh: trendscenter/gift-bids
+  status: active
+  dh: trends/gift-bids
+  ci: none
 
-  - gh: "khanlab/hippunfold"
-    status: active
-    dh: "khanlab/hippunfold"
+- gh: khanlab/hippunfold
+  status: active
+  dh: khanlab/hippunfold
 
-  - gh: "MICA-MNI/micapipe"
-    status: active
-    dh: "micalab/micapipe"
-    ci: "none"
+- gh: MICA-MNI/micapipe
+  status: active
+  dh: micalab/micapipe
+  ci: none
 
-  - gh: "nipreps/fmriprep"
-    status: active
-    dh: "nipreps/fmriprep"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
+- gh: nipreps/fmriprep
+  status: active
+  dh: nipreps/fmriprep
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
 
-  - gh: "nipreps/dmriprep"
-    status: active
-    dh: "nipreps/dmriprep"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - dwi
+- gh: nipreps/dmriprep
+  status: active
+  dh: nipreps/dmriprep
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - dwi
 
-  - gh: "nipreps/mriqc"
-    status: active
-    dh: "nipreps/mriqc"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
+- gh: nipreps/mriqc
+  status: active
+  dh: nipreps/mriqc
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
 
-  - gh: "nipreps/nibabies"
-    status: active
-    dh: "nipreps/nibabies"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
+- gh: nipreps/nibabies
+  status: active
+  dh: nipreps/nibabies
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
 
-  - gh: "nipreps/nirodents"
-    status: active
-    dh: "nipreps/nirodents"
-    ds_type:
-      - raw
-    datatype:
-      - anat
-      - func
+- gh: nipreps/nirodents
+  status: active
+  dh: nipreps/nirodents
+  ds_type:
+  - raw
+  datatype:
+  - anat
+  - func
 
-  - gh: "nipreps/smriprep"
-    status: active
-    dh: "nipreps/smriprep"
-    ds_type:
-      - raw
+- gh: nipreps/smriprep
+  status: active
+  dh: nipreps/smriprep
+  ds_type:
+  - raw
 
-  - gh: "PeerHerholz/BIDSonym"
-    status: active
-    dh: "peerherholz/bidsonym"
-    ci: "travis"
-    branch: "master"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: PeerHerholz/BIDSonym
+  status: active
+  dh: peerherholz/bidsonym
+  ci: travis
+  branch: master
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "PennLINC/qsiprep"
-    status: active
-    dh: "pennbbl/qsiprep"
-    ds_type:
-      - raw
+- gh: PennLINC/qsiprep
+  status: active
+  dh: pennbbl/qsiprep
+  ds_type:
+  - raw
 
-  - gh: "poldracklab/fitlins"
-    status: active
-    dh: "poldracklab/fitlins"
-    branch: "dev"
-    ds_type:
-      - derivative
-    datatype:
-      - func
+- gh: poldracklab/fitlins
+  status: active
+  dh: poldracklab/fitlins
+  branch: dev
+  ds_type:
+  - derivative
+  datatype:
+  - func
 
-  - gh: "connectomicslab/connectomemapper3"
-    status: active
-    dh: "sebastientourbier/connectomemapper-bidsapp"
-    ds_type:
-      - raw
-      - derivative
-    datatype:
-      - anat
-      - func
-      - dwi
-      - eeg
+- gh: connectomicslab/connectomemapper3
+  status: active
+  dh: sebastientourbier/connectomemapper-bidsapp
+  ds_type:
+  - raw
+  - derivative
+  datatype:
+  - anat
+  - func
+  - dwi
+  - eeg
 
-  - gh: "sebastientourbier/multiscalebrainparcellator"
-    status: active
-    dh: "sebastientourbier/multiscalebrainparcellator"
-    ds_type:
-      - raw
-    datatype:
-      - anat
+- gh: sebastientourbier/multiscalebrainparcellator
+  status: active
+  dh: sebastientourbier/multiscalebrainparcellator
+  ds_type:
+  - raw
+  datatype:
+  - anat
 
-  - gh: "Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit"
-    status: active
-    dh: "sebastientourbier/mialsuperresolutiontoolkit"
+- gh: Medical-Image-Analysis-Laboratory/mialsuperresolutiontoolkit
+  status: active
+  dh: sebastientourbier/mialsuperresolutiontoolkit
