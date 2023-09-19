@@ -57,6 +57,8 @@ navigation:
     name: Apps
 -   src: about
     name: About
+-   src: spec
+    name: Execution specification
 -   src: tutorial
     name: Tutorials
 -   src: dev_faq
