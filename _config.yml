@@ -484,7 +484,7 @@ apps:
 
 -   gh: PennLINC/xcp_d
     dh: pennlinc/xcp_d
-    description: Post-processing of fMRIPrep for functional connectivity analysis
+    description: Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
     status: active
     ds_type:
     -   derivative
