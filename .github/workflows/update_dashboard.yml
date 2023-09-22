@@ -1,3 +1,4 @@
+---
 name: update dashboard
 
 on:
@@ -29,8 +30,8 @@ jobs:
 
         -   uses: peter-evans/create-pull-request@v5
             with:
-              commit-message: update dashboard
-              assignees: Remi-Gau
-              base: master
-              delete-branch: true
-              title: '[BOT] update dashboard'
+                commit-message: update dashboard
+                assignees: Remi-Gau
+                base: master
+                delete-branch: true
+                title: '[BOT] update dashboard'

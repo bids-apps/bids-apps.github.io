@@ -1,3 +1,4 @@
+---
 name: Feature request
 
 # See the json schema to help you create / update this form
@@ -7,13 +8,13 @@ description: Suggest an idea for this website
 
 body:
 
-  - type: markdown
+-   type: markdown
     attributes:
-      value: |
-        - Have you checked our [contributing guide](https://github.com/bids-apps/bids-apps.github.io/blob/master/CONTRIBUTING.md)?
-          It's a helpful resource.
+        value: |
+            - Have you checked our [contributing guide](https://github.com/bids-apps/bids-apps.github.io/blob/master/CONTRIBUTING.md)?
+              It's a helpful resource.
 
-  - type: textarea
+-   type: textarea
     attributes:
-      label: Your idea
-      description: When you suggest your idea, please try to supply (mock) examples!
+        label: Your idea
+        description: When you suggest your idea, please try to supply (mock) examples!

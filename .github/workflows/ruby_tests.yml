@@ -1,32 +1,33 @@
+---
 # runs 'bundle install' and caches installed gems automatically
 name: Ruby Tests
 
 on:
-  push:
-    branches: [master]
-  pull_request:
-    branches: ['**']
-  create:
-    branches: [master]
-    tags: ['**']
-  schedule:
-    - cron: "0 4 * * 1"
+    push:
+        branches: [master]
+    pull_request:
+        branches: ['**']
+    create:
+        branches: [master]
+        tags: ['**']
+    schedule:
+    -   cron: 0 4 * * 1
 
 concurrency:
-  group: ${{ github.ref }}
-  cancel-in-progress: true
+    group: ${{ github.ref }}
+    cancel-in-progress: true
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
+    test:
+        runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v2
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.6
-          bundler-cache: true
+        steps:
+        -   uses: actions/checkout@v2
+        -   name: Set up Ruby
+            uses: ruby/setup-ruby@v1
+            with:
+                ruby-version: 2.6
+                bundler-cache: true
 
-      - name: Test build
-        run: bundle exec jekyll build
+        -   name: Test build
+            run: bundle exec jekyll build
