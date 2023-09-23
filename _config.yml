@@ -87,6 +87,7 @@ apps:
   #   branch: Default branch of the repo. Defaults to "master"
   #   workflow: Name of the test workflow.
 
+
   # apps that are part of the bids apps github organization
   # sorted alphabetically by app name
 
@@ -480,6 +481,17 @@ apps:
     datatype:
     -   anat
     description: a BIDS app for pseudo-anonymization of neuroimaging data
+
+-   gh: PennLINC/xcp_d
+    dh: pennlinc/xcp_d
+    description: Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
+    status: active
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    ci: circleci
+    branch: main
 
 -   gh: PennLINC/qsiprep
     status: active
