@@ -381,19 +381,6 @@ apps:
     -   func
     description: BIDS App for U-net brain masking of fetal bold MRI
 
--   gh: PennLINC/babs_tests    # see "docker/README.md"
-    status: active
-    dh: pennlinc/toy_bids_app
-    ds_type:
-    -   raw
-    -   derivative
-    datatype:
-    -   anat
-    -   func
-    -   dwi
-    ci: none
-    description: Tests for BABS
-
 -   gh: trendscenter/gift-bids
     status: active
     dh: trends/gift-bids
@@ -482,6 +469,17 @@ apps:
     -   anat
     description: a BIDS app for pseudo-anonymization of neuroimaging data
 
+-   gh: PennLINC/aslprep
+    dh: pennlinc/aslprep
+    description: Preprocessing of arterial spin labeling data
+    status: active
+    ds_type:
+    -   raw
+    datatype:
+    -   perf
+    ci: circleci
+    branch: main
+
 -   gh: PennLINC/xcp_d
     dh: pennlinc/xcp_d
     description: Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
@@ -498,7 +496,11 @@ apps:
     dh: pennbbl/qsiprep
     ds_type:
     -   raw
+    datatype:
+    -   dwi
     description: Preprocessing and reconstruction of diffusion MRI
+    ci: circleci
+    branch: master
 
 -   gh: poldracklab/fitlins
     status: active
