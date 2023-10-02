@@ -509,7 +509,11 @@ apps:
     dh: pennbbl/qsiprep
     ds_type:
     -   raw
+    datatype:
+    -   dwi
     description: Preprocessing and reconstruction of diffusion MRI
+    ci: circleci
+    branch: master
 
 -   gh: poldracklab/fitlins
     status: active
