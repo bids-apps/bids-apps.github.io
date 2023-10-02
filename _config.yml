@@ -381,19 +381,6 @@ apps:
     -   func
     description: BIDS App for U-net brain masking of fetal bold MRI
 
--   gh: PennLINC/babs_tests    # see "docker/README.md"
-    status: active
-    dh: pennlinc/toy_bids_app
-    ds_type:
-    -   raw
-    -   derivative
-    datatype:
-    -   anat
-    -   func
-    -   dwi
-    ci: none
-    description: Tests for BABS
-
 -   gh: trendscenter/gift-bids
     status: active
     dh: trends/gift-bids
