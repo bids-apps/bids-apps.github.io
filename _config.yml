@@ -482,6 +482,17 @@ apps:
     -   anat
     description: a BIDS app for pseudo-anonymization of neuroimaging data
 
+-   gh: PennLINC/aslprep
+    dh: pennlinc/aslprep
+    description: Preprocessing of arterial spin labeling data
+    status: active
+    ds_type:
+    -   raw
+    datatype:
+    -   perf
+    ci: circleci
+    branch: main
+
 -   gh: PennLINC/xcp_d
     dh: pennlinc/xcp_d
     description: Post-processing of fMRIPrep, nibabies, HCP, and DCAN BOLD derivatives for functional connectivity analysis
