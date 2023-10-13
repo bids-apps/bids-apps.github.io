@@ -17,7 +17,7 @@ BIDS Apps rely upon two technologies for container computing:
   containers on local hardware (running Windows, Mac OS X or Linux) or in the
   cloud.
 
-- [Singularity](https://singularity.lbl.gov/) - for running containers on HPCs.
+- [Apptainer](https://apptainer.org/) - for running containers on HPCs.
 
 BIDS Apps are deposited in the Docker Hub repository, making them openly
 accessible. Each app is versioned and all of the historical versions are
@@ -28,7 +28,7 @@ their analysis workflow.
 Docker is used for its excellent documentation, maturity, and the Docker Hub
 service for storage and distribution of the images. Docker containers are easily
 run on personal computers and cloud services. However, the Docker Engine is
-rarely available in HPCs. Singularity is a unique container technology designed
+rarely available in HPCs. Apptainer is a unique container technology designed
 from the ground up, with the encapsulation of binary dependencies and HPC use in
 mind. Its main advantage over Docker is that it does not require root access for
 container execution and thus is safe to use on multi-tenant systems. In
