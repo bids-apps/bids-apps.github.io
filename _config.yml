@@ -396,7 +396,7 @@ apps:
     status: active
     dh: micalab/micapipe
     ci: none
-    description: micapipe from the Multimodal imaging and connectome analysis lab (http://mica-mni.github.io) at the Montreal Neurological Institute. Read
+    description: micapipe from the Multimodal imaging and connectome analysis lab (https://mica-mni.github.io) at the Montreal Neurological Institute. Read
         The Docs documentation below
 
 -   gh: nipreps/fmriprep
