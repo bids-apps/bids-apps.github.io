@@ -88,16 +88,10 @@ apps:
   #   workflow: Name of the test workflow.
 
 
-  # apps that are part of the bids apps github organization
-  # sorted alphabetically by app name
+  ## --- apps that are part of the bids apps github organization
+  # sorted by status and then alphabetically by app name
 
--   gh: bids-apps/aa
-    status: unmaintained
-    dh: bids/aa
-    ds_type:
-    -   raw
-    -   derivative
-    description: BIDS App containing an instance of the Automatic Analysis
+  ### --- active apps
 
 -   gh: bids-apps/afni_proc
     status: active
@@ -173,16 +167,7 @@ apps:
 -   gh: bids-apps/example
     status: active
     dh: bids/example
-
     description: This an example app that can serve as a template.
--   gh: bids-apps/FibreDensityAndCrosssection
-    status: unmaintained
-    dh: bids/fibredensityandcrosssection
-    ds_type:
-    -   mri
-    datatype:
-    -   dmri
-    description:
 
 -   gh: bids-apps/freesurfer
     status: active
@@ -192,6 +177,18 @@ apps:
     datatype:
     -   func
     description: BIDS app wrapping recon-all from FreeSurfer
+
+-   gh: bids-apps/giga_connectome
+    status: active
+    dh: bids/giga_connectome
+    ci: gh
+    branch: main
+    workflow: test
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: This is a BIDS-App to extract signal from a parcellation with nilearn, typically useful in a context of resting-state data processing.
 
 -   gh: bids-apps/HCPPipelines
     status: active
@@ -251,11 +248,6 @@ apps:
     -   dwi
     description: BIDS app for NeuroData's MRI to Graphs pipeline
 
--   gh: bids-apps/niak
-    status: unmaintained
-    dh: bids/niak
-
-    description: 'Pipeline for preprocessing of fMRI and structural MRI scans '
 -   gh: bids-apps/nipypelines
     status: active
     dh: bids/nipypelines
@@ -293,15 +285,6 @@ apps:
     -   func
     description: PCP Quality Assessment Protocol
 
--   gh: bids-apps/rs_signal_extract
-    status: active
-    dh: bids/rs_signal_extract
-    ds_type:
-    -   derivative
-    datatype:
-    -   func
-    description: BIDS App for resting state signal extraction using nilearn.
-
 -   gh: bids-apps/rsHRF
     status: active
     dh: bids/rshrf
@@ -329,6 +312,39 @@ apps:
     -   dwi
     description: implements Freesurfer's TRACULA (TRActs Constrained by UnderLying Anatomy) tool for cross-sectional as well as longitudinal (multi session)
         input data.
+
+  ### --- unmaintained apps
+
+-   gh: bids-apps/aa
+    status: unmaintained
+    dh: bids/aa
+    ds_type:
+    -   raw
+    -   derivative
+    description: BIDS App containing an instance of the Automatic Analysis
+
+-   gh: bids-apps/FibreDensityAndCrosssection
+    status: unmaintained
+    dh: bids/fibredensityandcrosssection
+    ds_type:
+    -   mri
+    datatype:
+    -   dmri
+    description:
+
+-   gh: bids-apps/niak
+    status: unmaintained
+    dh: bids/niak
+    description: Pipeline for preprocessing of fMRI and structural MRI scans
+
+-   gh: bids-apps/rs_signal_extract
+    status: unmaintained
+    dh: bids/rs_signal_extract
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: BIDS App for resting state signal extraction using nilearn.
 
 # apps hosted somewhere else
 # sorted alphabetically by DockerHub (dh)
