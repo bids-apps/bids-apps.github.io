@@ -1,5 +1,7 @@
-{% assign app = include.app %} {% assign branch = include.branch %} {% assign
-tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
+{% assign app = include.app %}
+{% assign branch = include.branch %}
+{% assign tokens = app.gh | split: "/" %}
+{% assign app_name = tokens[1] %}
 
 <tr>
   <td>
@@ -7,7 +9,7 @@ tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
   </td>
 
   <td>
-    {% if app.status == "active" %}
+    {% if app.status != "active" %}
       <a href="http://unmaintained.tech/">
         <img
           src="http://unmaintained.tech/badge.svg"
