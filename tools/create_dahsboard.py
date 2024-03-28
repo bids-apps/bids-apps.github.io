@@ -23,27 +23,32 @@ for app in data["apps"]:
 
     branch = app.get("branch", "master")
 
-    if not app.get("ci"):
-        image = f"https://circleci.com/gh/{ app['gh'] }.svg?style=shield"
-        link = f"https://circleci.com/gh/{ app['gh'] }/tree/{ branch }"
-
-    elif app["ci"] == "none":
-        image = "https://img.shields.io/badge/CI-none-lightgrey"
-        link = None
-
-    elif app["ci"] == "travis":
-        image = f"https://app.travis-ci.com/{ app['gh'] }.svg?branch={ branch }"
-        link = f"https://app.travis-ci.com/{ app['gh'] }"
-
-    elif app["ci"] == "gh":
-        image = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/badge.svg?branch={ branch }"
-        link = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/"
+    if app.get("status") == "unmaintained":
+        ci.append("[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)")
 
     else:
-        image = "https://img.shields.io/badge/CI-UNKNOWN-darkgrey"
-        link = None
 
-    ci.append(f"[![CI]({image})]({link})")
+        if not app.get("ci"):
+            image = f"https://circleci.com/gh/{ app['gh'] }.svg?style=shield"
+            link = f"https://circleci.com/gh/{ app['gh'] }/tree/{ branch }"
+
+        elif app["ci"] == "none":
+            image = "https://img.shields.io/badge/CI-none-lightgrey"
+            link = None
+
+        elif app["ci"] == "travis":
+            image = f"https://app.travis-ci.com/{ app['gh'] }.svg?branch={ branch }"
+            link = f"https://app.travis-ci.com/{ app['gh'] }"
+
+        elif app["ci"] == "gh":
+            image = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/badge.svg?branch={ branch }"
+            link = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/"
+
+        else:
+            image = "https://img.shields.io/badge/CI-UNKNOWN-darkgrey"
+            link = None
+
+        ci.append(f"[![CI]({image})]({link})")
 
     last_commit.append(
         f"![GitHub last commit](https://img.shields.io/github/last-commit/{app['gh']})"

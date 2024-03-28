@@ -1,5 +1,7 @@
-{% assign app = include.app %} {% assign branch = include.branch %} {% assign
-tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
+{% assign app = include.app %}
+{% assign branch = include.branch %}
+{% assign tokens = app.gh | split: "/" %}
+{% assign app_name = tokens[1] %}
 
 <tr>
   <td>
@@ -7,26 +9,34 @@ tokens = app.gh | split: "/" %} {% assign app_name = tokens[1] %}
   </td>
 
   <td>
-    {% if app.ci == "travis" %}
-    <a href="https://app.travis-ci.com/{{ app.gh }}">
-      <img
-        src="https://app.travis-ci.com/{{ app.gh }}.svg?branch={{ branch }}"
-      />
-    </a>
-    {% elsif app.ci == "gh" %}
-    <a
-      href="https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml/"
-    >
-      <img
-        src="https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml/badge.svg?branch={{ branch }}"
-      />
-    </a>
-    {% elsif app.ci == "none" %}
-    <img src="https://img.shields.io/badge/CI-unavailable-lightgrey" />
+    {% if app.status != "active" %}
+      <a href="http://unmaintained.tech/">
+        <img
+          src="http://unmaintained.tech/badge.svg"
+        />
+      </a>
     {% else %}
-    <a href="https://circleci.com/gh/{{ app.gh }}/tree/{{ branch }}">
-      <img src="https://circleci.com/gh/{{ app.gh }}.svg?style=shield" />
-    </a>
+      {% if app.ci == "travis" %}
+        <a href="https://app.travis-ci.com/{{ app.gh }}">
+          <img
+            src="https://app.travis-ci.com/{{ app.gh }}.svg?branch={{ branch }}"
+          />
+        </a>
+      {% elsif app.ci == "gh" %}
+        <a
+          href="https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml/"
+        >
+          <img
+            src="https://github.com/{{ app.gh }}/actions/workflows/{{ app.workflow }}.yml/badge.svg?branch={{ branch }}"
+          />
+        </a>
+      {% elsif app.ci == "none" %}
+        <img src="https://img.shields.io/badge/CI-unavailable-lightgrey" />
+        {% else %}
+        <a href="https://circleci.com/gh/{{ app.gh }}/tree/{{ branch }}">
+          <img src="https://circleci.com/gh/{{ app.gh }}.svg?style=shield" />
+        </a>
+      {% endif %}
     {% endif %}
   </td>
 

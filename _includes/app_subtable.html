@@ -16,7 +16,7 @@
     {% for app in include.apps %}
 
         {% assign display = false %}
-        {% if app.datatype contains include.datatype and app.ds_type contains include.ds_type %}
+        {% if app.datatype contains include.datatype and app.ds_type contains include.ds_type and app.status == "active" %}
             {% assign display = true %}
         {% endif %}
 
