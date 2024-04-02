@@ -180,7 +180,7 @@ apps:
 
 -   gh: bids-apps/giga_connectome
     status: active
-    dh: bids/giga_connectome
+    dh: haotingwang/giga_connectome
     ci: gh
     branch: main
     workflow: test
