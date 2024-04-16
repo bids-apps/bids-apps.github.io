@@ -1,5 +1,5 @@
 ---
-name: update dashboard
+name: validate apps
 
 on:
     pull_request:
@@ -14,7 +14,7 @@ concurrency:
     cancel-in-progress: true
 
 jobs:
-    black:
+    validate:
         runs-on: ubuntu-latest
         steps:
         -   uses: actions/checkout@v3
