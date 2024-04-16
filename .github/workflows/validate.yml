@@ -1,5 +1,5 @@
 ---
-name: update dashboard
+name: validate apps
 
 on:
     pull_request:
