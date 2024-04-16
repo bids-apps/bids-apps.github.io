@@ -24,7 +24,9 @@ for app in data["apps"]:
     branch = app.get("branch", "master")
 
     if app.get("status") == "unmaintained":
-        ci.append("[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)")
+        ci.append(
+            "[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)"
+        )
 
     else:
 
@@ -59,7 +61,13 @@ for app in data["apps"]:
     )
 
 df = pd.DataFrame(
-    {"name": name, "status": status, "ci": ci, "last commit": last_commit, "version": version}
+    {
+        "name": name,
+        "status": status,
+        "ci": ci,
+        "last commit": last_commit,
+        "version": version,
+    }
 )
 
 # append to readme

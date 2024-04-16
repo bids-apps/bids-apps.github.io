@@ -2,6 +2,9 @@
 name: update dashboard
 
 on:
+    pull_request:
+        branches:
+        -   '*'
     push:
         branches:
         -   master
@@ -25,13 +28,5 @@ jobs:
                 python -m pip install --upgrade pip
                 pip install -r tools/requirements.txt
 
-        -   name: Update readme
-            run: python tools/create_dahsboard.py
-
-        -   uses: peter-evans/create-pull-request@v5
-            with:
-                commit-message: update dashboard
-                assignees: Remi-Gau
-                base: master
-                delete-branch: true
-                title: '[BOT] update dashboard'
+        -   name: Validate
+            run: python tools/validate_apps.py
