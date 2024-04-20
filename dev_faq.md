@@ -88,7 +88,7 @@ simply fail with an error message if the dataset is not BIDS compliant.
 
 You can release BIDS Apps using your own or your lab's account. However, if you
 want to be added to the BIDS docker hub, please message the
-[BIDS maintainers](bids.maintenance+apps@gmail.com) to have a repo created for
+[BIDS maintainers](mailto:bids.maintenance+apps@gmail.com) to have a repo created for
 you.
 
 If you base your code on <https://github.com/bids-apps/example> deployment on
