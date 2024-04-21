@@ -1,26 +1,4 @@
----
-layout: post
-title: Developer FAQ
----
-
-- [Is there a BIDS App template?](#is-there-a-bids-app-template)
-- [Which container should I use to start building my BIDS App?](#which-container-should-i-use-to-start-building-my-bids-app)
-- [API](#api)
-    - [What should the API of my BIDS App look like?](#what-should-the-api-of-my-bids-app-look-like)
-    - [Can I add more arguments to the API of my App?](#can-i-add-more-arguments-to-the-api-of-my-app)
-    - [What the kinds of analysis levels (`participant` and `group`) mean?](#what-the-kinds-of-analysis-levels-participant-and-group-mean)
-    - [What do we do if our application does not have any use for the group level analysis?](#what-do-we-do-if-our-application-does-not-have-any-use-for-the-group-level-analysis)
-- [Is it mandatory to first check the dataset validity using the BIDS-validator?](#is-it-mandatory-to-first-check-the-dataset-validity-using-the-bids-validator)
-- [How do I upload my BIDS App to the BIDS App Github org?](#how-do-i-upload-my-bids-app-to-the-bids-app-github-org)
-- [Testing Data](#testing-data)
-- [Versioning](#versioning)
-    - [When is a new image deposited to Docker Hub?](#when-is-a-new-image-deposited-to-docker-hub)
-    - [How to tag a new release?](#how-to-tag-a-new-release)
-    - [How should I version my BIDS App?](#how-should-i-version-my-bids-app)
-    - [I want to release a new version of a BIDS App, but the pipeline version is the same?](#i-want-to-release-a-new-version-of-a-bids-app-but-the-pipeline-version-is-the-same)
-    - [Where should I describe changes between versions?](#where-should-i-describe-changes-between-versions)
-    - [How can I check a version of a container I have available locally?](#how-can-i-check-a-version-of-a-container-i-have-available-locally)
-    - [How can I download a particular version of a BIDS App?](#how-can-i-download-a-particular-version-of-a-bids-app)
+# BIDS app FAQ
 
 ## Is there a BIDS App template?
 
