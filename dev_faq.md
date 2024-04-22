@@ -1,3 +1,3 @@
 # BIDS app FAQ
 
-Moved 
+Moved to docs/FAQ/apps.md
