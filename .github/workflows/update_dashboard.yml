@@ -13,6 +13,7 @@ concurrency:
 jobs:
     black:
         runs-on: ubuntu-latest
+        if: github.repository == 'bids-apps/bids-apps.github.io'
         steps:
         -   uses: actions/checkout@v3
 
