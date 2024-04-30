@@ -19,6 +19,7 @@ See out [CONTRIBUTING guidelines](./CONTRIBUTING.md) to see how you can help.
 
 Status of the default branch of each app.
 
+<!--lint ignore -->
 <!-- INSERT DASHBOARD HERE -->
 
 
