@@ -2,4 +2,5 @@
 layout: default
 ---
 
-moved to docs/tools/apps/dashboard.md
+Moved [here](https://bids-website.readthedocs.io/en/latest/tools/apps/dashboard/)
+

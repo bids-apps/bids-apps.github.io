@@ -1,3 +1,3 @@
 # BIDS app FAQ
 
-Moved to docs/FAQ/apps.md
+Moved [here](https://bids-website.readthedocs.io/en/latest/faq/apps/)
