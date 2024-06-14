@@ -26,7 +26,7 @@ This command runs docker with some flags and then binds the input directory on
 our local machine, for example, `/Users/srycajal/data/ds005`, to a preset
 directory inside of the docker container (`/bids_dataset`). You must use the
 absolute path to both of these directories. Similarly, we bind the `outputs`
-directory on our local machine e.g., `/Users/srycajal/outputs` to the `/outputs`
+directory on our local machine for example, `/Users/srycajal/outputs` to the `/outputs`
 directory inside the container. This is the path where results should be stored.
 
 Next, the command lists the docker container to download from Docker Hub and
