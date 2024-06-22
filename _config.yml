@@ -563,4 +563,5 @@ apps:
     dh: dcanumn/bibsnet
     datatype:
     -   anat
-    description: Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing JLF within Nibabies.
+    description: Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing
+        JLF within Nibabies.
