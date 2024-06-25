@@ -557,3 +557,11 @@ apps:
     dh: sebastientourbier/mialsuperresolutiontoolkit
     description: The Medical Image Analysis Laboratory Super-Resolution ToolKit (MIALSRTK) consists of a set of C++ and Python processing and workflow tools
         necessary to perform motion-robust super-resolution fetal MRI reconstruction in the BIDS Apps framework.
+
+-   gh: DCAN-Labs/BIBSnet
+    status: active
+    dh: dcanumn/bibsnet
+    datatype:
+    -   anat
+    description: Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing
+        JLF within Nibabies.
