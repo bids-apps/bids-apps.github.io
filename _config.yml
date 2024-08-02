@@ -570,8 +570,8 @@ apps:
     status: active
     dh: openneuropet/petdeface
     datatype:
-        - pet
-        - anat
+    -   pet
+    -   anat
     description: A nipype implementation of MiDeface used to deface PET and MR data as well as co-register the two modalities.
     branch: main
     ci: aws_codebuild
