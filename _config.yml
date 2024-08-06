@@ -565,3 +565,14 @@ apps:
     -   anat
     description: Utility for creating a nnU-Net anatomical MRI segmentation and mask with a infant brain trained model for the purposes of circumventing
         JLF within Nibabies.
+
+-   gh: openneuropet/petdeface
+    status: active
+    dh: openneuropet/petdeface
+    datatype:
+    -   pet
+    -   anat
+    description: A nipype implementation of MiDeface used to deface PET and MR data as well as co-register the two modalities.
+    branch: main
+    ci: aws_codebuild
+    badge: https://codebuild.us-east-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiYzdXV0tYSkQzTVNkcG04cHA2S055UXlKRlZTU1VONThUMVRoZVcwU3l1aHFhdVBlNDNaRGVCYzdWM1Q0WjYzQ1lRU2ZTSHpmSERPWFRkVXVyb3k3RTZBPSIsIml2UGFyYW1ldGVyU3BlYyI6IjRCZFFIQnNGT2lKcDA1VG4iLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main

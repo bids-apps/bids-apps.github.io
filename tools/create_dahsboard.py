@@ -46,6 +46,10 @@ for app in data["apps"]:
             image = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/badge.svg?branch={ branch }"
             link = f"https://github.com/{ app['gh'] }/actions/workflows/{ app['workflow'] }.yml/"
 
+        elif app["ci"] == "aws_codebuild":
+            image = f"{ app['badge'] }"
+            link = None
+
         else:
             image = "https://img.shields.io/badge/CI-UNKNOWN-darkgrey"
             link = None
