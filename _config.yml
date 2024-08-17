@@ -528,6 +528,18 @@ apps:
     -   func
     description: Fit Linear Models to BIDS Datasets
 
+- gh: reprostat/reproa
+  dh: reprostat/reproa
+  status: active
+  branch: master
+  ds_type:
+    - raw
+  datatype:
+    - anat
+    - fmap
+    - func
+  description: BIDS App containing an instance of the ReproAnalysis (reproa) software (core only) running under Octave with minimum dependencies.
+
 -   gh: connectomicslab/connectomemapper3
     status: active
     dh: sebastientourbier/connectomemapper-bidsapp
