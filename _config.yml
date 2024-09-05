@@ -474,6 +474,42 @@ apps:
     -   raw
     description: Structural MRI PREProcessing (sMRIPrep) workflows for NIPreps (NeuroImaging PREProcessing tools)
 
+-   gh: nipreps/fmripost-aroma
+    status: active
+    dh: nipreps/fmripost-aroma
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Functional MRI postprocessing with ICA-AROMA
+
+-   gh: nipreps/fmripost-phase
+    status: active
+    dh: nipreps/fmripost-phase
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Postprocessing of complex-valued fMRI data
+
+-   gh: nipreps/fmripost-rapidtide
+    status: active
+    dh: nipreps/fmripost-rapidtide
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Functional MRI postprocessing with Rapidtide
+
+-   gh: ME-ICA/fmripost-tedana
+    status: active
+    dh: me-ica/fmripost-tedana
+    ds_type:
+    -   derivative
+    datatype:
+    -   func
+    description: Multi-echo fMRI postprocessing with tedana
+
 -   gh: PeerHerholz/BIDSonym
     status: active
     dh: peerherholz/bidsonym
@@ -514,9 +550,20 @@ apps:
     -   raw
     datatype:
     -   dwi
-    description: Preprocessing and reconstruction of diffusion MRI
+    description: Preprocessing of diffusion MRI
     ci: circleci
     branch: master
+
+-   gh: PennLINC/qsirecon
+    status: active
+    dh: pennlinc/qsirecon
+    ds_type:
+    -   derivative
+    datatype:
+    -   dwi
+    description: Reconstruction of preprocessed diffusion MRI
+    ci: circleci
+    branch: main
 
 -   gh: poldracklab/fitlins
     status: active
