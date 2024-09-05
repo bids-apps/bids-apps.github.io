@@ -503,7 +503,7 @@ apps:
 
 -   gh: ME-ICA/fmripost-tedana
     status: active
-    dh: me-ica/fmripost-tedana
+    dh: tedana/fmripost-tedana
     ds_type:
     -   derivative
     datatype:
