@@ -501,15 +501,6 @@ apps:
     -   func
     description: Functional MRI postprocessing with Rapidtide
 
--   gh: ME-ICA/fmripost-tedana
-    status: active
-    dh: tedana/fmripost-tedana
-    ds_type:
-    -   derivative
-    datatype:
-    -   func
-    description: Multi-echo fMRI postprocessing with tedana
-
 -   gh: PeerHerholz/BIDSonym
     status: active
     dh: peerherholz/bidsonym
