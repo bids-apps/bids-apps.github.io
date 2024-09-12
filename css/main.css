@@ -73,3 +73,11 @@ td {
   text-align: left;
   vertical-align: middle;
 }
+
+.banner {width: 60%;
+         display: flex;
+         justify-content: center;
+         margin-left: 20%;
+         padding: 1em;
+         flex-direction: column
+        }
