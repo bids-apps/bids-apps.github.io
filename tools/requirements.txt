@@ -1,5 +1,0 @@
-rich
-ruamel.yaml
-requests
-pandas
-tabulate
