@@ -48,6 +48,7 @@ kramdown:
 
 plugins:
 -   jekyll-paginate
+-   jekyll-redirect-from
 
 # Defines buttons and links to the pages that will be displayed in the nav bar
 # see _includes/header.html
